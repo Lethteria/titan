@@ -1,0 +1,86 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}*/
+//@import 'navbar';
+$brown-color: #302622;
+$beige-color: #b3a4a4;
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.main-page {
+    padding-top: 80px;
+    background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%);
+}
+.main-page-about {
+    padding-bottom: 105px;
+    background: url("../img/main/backgr-field.png") bottom no-repeat;
+    border-bottom: 5px solid #666665;
+    //background-attachment: fixed;
+    //background-position: ;
+    .foto-cups {
+        float: left;
+        margin: 0 5%;
+        width: 42%;
+    }
+}
+.main-content {
+    padding: 20px 0 5px;
+    background: #ffffff;
+    /*.foto-cups {
+        margin-left: 5%;
+    }*/
+    .about-club {
+        margin: 70px 100px 50px 30px;
+
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+
+        color: $brown-color;
+    }
+}
+.main-page-slider {
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+#back-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    //opacity: 0;
+    transition: opacity 0.5s ease-out 0.2s;
+}
+.hide-arrow {
+    opacity: 0;
+}
+.show {
+    opacity: 0.6;
+    &:hover {
+        transition-duration: 0.1s!important;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+@media (max-width : 710px) {
+    #back-to-top {
+        width: 50px;
+    }
+}
+
+@media  screen and (min-width : 320px) and (max-width : 480px) {}
+@media  screen and (min-width : 481px) and (max-width : 700px) {}
+@media  screen and (min-width : 710px) and (max-width : 1000px) {}
+@media  screen and (min-width : 1001px) and (max-width : 1024px) {}
+

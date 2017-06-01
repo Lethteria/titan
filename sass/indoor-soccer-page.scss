@@ -1,0 +1,206 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}*/
+//@import 'navbar';
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+$brown-color: #302622;
+$beige-color: #b3a4a4;
+$green-color: #224429;
+$light-green-color: #8eac97;
+
+.indoor-soccer-page {
+    padding: 50px 0 100px;
+    background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%);
+
+    .container {
+        padding-bottom: 10px;
+    }
+
+    .item-title {
+        margin-bottom: 30px;
+        padding: 10px 0;
+        font-size: 24px;
+
+        /*color: #ffffff;
+        background-color: desaturate(lighten($green-color, 10%),10%);*/
+        color: lighten($green-color,10%);
+        border-top: 1px solid #dddddd;
+        border-bottom: 2px solid #2c382e;
+        background-color: #eeeeee;
+    }
+    .indoor-soccer-item {
+        margin: 3% 3% 4%;
+        .fa {
+            font: inherit;
+            &:after {
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        .chevron-down {
+            display: block;
+            &:after {
+                content: "\f103";
+                margin-left: 15px;
+                height: 23px;
+                line-height: 23px;
+            }
+        }
+    }
+    .section-title {
+        padding: 5px 0;
+        font-size: 18px;
+
+        //color: #ffffff;
+        //background-color: desaturate(lighten($green-color, 10%),10%);
+        color: $green-color;
+        background-color: #DDDDDD;
+    }
+    .section-foto {
+        margin-right: 20px;
+        margin-left: 20px;
+        img {
+            //background-color: #000000;
+            transition: all 0.5s;
+            backface-visibility: hidden;
+            &:hover {
+                opacity: 0.8;
+                transform: scale(1.05,1.05);
+            }
+        }
+    }
+    .load-more {
+        margin-right: 20px;
+        margin-left: 20px;
+
+        color: $brown-color;
+        border-top: 1px solid $beige-color;
+        transition: color 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            color: lighten($brown-color,40%);
+        }
+    }
+
+    .pagination-wrap {
+        //width: 30%;
+       // margin: 0 auto;
+        li.active {
+            background-color: desaturate(lighten($green-color, 10%),20%);
+        }
+    }
+    .progress {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+#back-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    //opacity: 0;
+    transition: opacity 0.5s ease-out 0.2s;
+}
+.hide-arrow {
+    opacity: 0;
+}
+.show {
+    opacity: 0.6;
+    &:hover {
+        transition-duration: 0.1s!important;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+@media (max-width : 710px) {
+    #back-to-top {
+        width: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .photo-gallery-page {
+        .gallery-title {
+            font-size: 24px;
+        }
+        .item-title {
+            h5 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width : 890px) {
+    .photo-gallery-page {
+        padding-top: 5%;
+        padding-bottom: 7%;
+        .gallery-title {
+            font-size: 20px;
+        }
+        .gallery-photo {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .item-title {
+            //padding-left: 20%;
+            //padding-right: 20%;
+            h5 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width : 710px) {
+    .photo-gallery-page {
+        .photo-item {
+            width: 100%;
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width : 480px) {
+    .about-trainer {
+        .trainer-image {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .trainer-card {
+            padding: 3%;
+        }
+        h4, h5 {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media  screen and (min-width : 320px) and (max-width : 480px) {}
+@media  screen and (min-width : 481px) and (max-width : 700px) {}
+@media  screen and (min-width : 710px) and (max-width : 1000px) {}
+@media  screen and (min-width : 1001px) and (max-width : 1024px) {}
+

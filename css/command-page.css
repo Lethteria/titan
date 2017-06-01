@@ -1,0 +1,108 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}*/
+.trainer-page {
+  padding: 80px 0 100px;
+  background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%); }
+
+.trainer-page-content {
+  padding: 20px 0 5px;
+  background: #ffffff; }
+
+.about-trainer {
+  margin: 5% 10%;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #302622; }
+  .about-trainer .card.horizontal .card-image {
+    max-width: 35%; }
+  .about-trainer .card-content {
+    /*h4, h5 {
+            color: lighten($green-color,10%);
+        }*/ }
+    .about-trainer .card-content p {
+      margin: 10px 0; }
+    .about-trainer .card-content span {
+      font-size: 20px;
+      color: #33663e; }
+
+.trainer-foto {
+  margin: 2% 50px; }
+  .trainer-foto .slick-initialized .slick-slide {
+    position: relative;
+    padding: 10px;
+    margin: 0 10px; }
+  .trainer-foto .slick-initialized .fa {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    color: #224429; }
+    .trainer-foto .slick-initialized .fa:before {
+      font-size: 40px;
+      opacity: 0.6;
+      transition: opacity 0.5s ease-out 0.2s; }
+    .trainer-foto .slick-initialized .fa:hover:before {
+      opacity: 1; }
+  .trainer-foto .slick-initialized .fa-chevron-right {
+    right: -40px; }
+  .trainer-foto .slick-initialized .fa-chevron-left {
+    left: -40px; }
+  .trainer-foto .slick-initialized a {
+    position: relative;
+    display: block; }
+    .trainer-foto .slick-initialized a:before {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      bottom: -10px;
+      left: -10px;
+      border: 1px solid #302622;
+      content: '';
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s; }
+    .trainer-foto .slick-initialized a:after {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      bottom: -10px;
+      left: -10px;
+      content: '';
+      opacity: 0;
+      background-color: #eee;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s; }
+    .trainer-foto .slick-initialized a:hover:before {
+      transform: scale3d(0.8, 0.7, 1); }
+    .trainer-foto .slick-initialized a:hover:after {
+      opacity: 0.5;
+      transform: scale3d(0.8, 0.7, 1); }
+
+#back-to-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  transition: opacity 0.5s ease-out 0.2s; }
+
+.hide-arrow {
+  opacity: 0; }
+
+.show {
+  opacity: 0.6; }
+  .show:hover {
+    transition-duration: 0.1s !important;
+    opacity: 1; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px; } }
+
+@media (max-width: 710px) {
+  #back-to-top {
+    width: 50px; } }

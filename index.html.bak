@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Settings</title>
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <!--link href="css/breadcrumb.css" rel="stylesheet"-->
+    <link href="css/main-page.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="row">
+                    <div class="col m3">
+                        <a  href="index.html" class="header-logo-img">
+                            <img src="../img/header/header-logo.png" class="responsive-img" alt="логотип Титан">
+                        </a>
+                    </div>
+                    <div class="col m9">
+                        <div class="header-logo-text">
+                            <h1><i><b>ФК ТИТАН</b><span>Мариуполь</span></i></h1>
+                            <h4 class="sponsor"><i>ПАО ММК им. Ильича</i></h4>
+                            <h4 class="sponsor"><i>конверторный цех</i></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper row">
+                <div class="col m5">
+                    <ul id="nav-mobile" class="hide-on-med-and-down">
+                        <li>
+                            <a href="#!" class="dropdown-button" data-activates="dropClub">клуб</a>
+                            <ul id="dropClub" class="dropdown-content">
+                                <li><a href="">История</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Стадион</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!" class="dropdown-button" data-activates="dropCommand">команда</a>
+                            <ul id="dropCommand" class="dropdown-content">
+                                <li><a href="#!">Игроки</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Тренер</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!" class="dropdown-button" data-activates="dropGame">участие в турнирах</a>
+                            <ul id="dropGame" class="dropdown-content">
+                                <li><a href="#!">Достижения</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#!">Игровые моменты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <form action="" class="col m7">
+                        <div class="row">
+                            <div class="input-field col m9">
+                                <i class="material-icons prefix">search</i>
+                                <input id="icon_prefix" type="text">
+                                <label for="icon_prefix" class="active">Поиск по сайту</label>
+                            </div>
+                            <div class="input-field col m3">
+                                <a class="waves-effect waves-light btn" href="#!" type="submit">найти</a>
+                            </div>
+                        </div>
+                </form>
+
+            </div>
+            <div class="nav-logoTitan">
+                <img src="../img/header/logo-filter.png" class="responsive-img" alt=""/>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="main-page">
+        <section class="main-page-about">
+            <div class="container">
+                <div class="main-content z-depth-2">
+                    <div class="row">
+                        <div class="col m5">
+                            <img src="../img/main/cups-big.jpg" class="foto-cups responsive-img" alt=""/>
+                        </div>
+                        <div class="col m7">
+                            <div class="about-club">
+                                <p>Футбольная команда «ТИТАН» представляет кислородно-конверторный цех мариупольского
+                                    металлургического комбината им. Ильича.</p>
+                                <p>На протяжении более пятнадцати лет команда участвет в городских и областных совернованиях,
+                                    побеждает в турнирах и чемпионатах как по мини-футболу, так и на большом поле, регулярно
+                                    пополняя свою копилку чемпионских титулов и званий.</p>
+                                <p>«ТИТАН» является многократным обладателем Кубка города по футболу, по мини-футболу,
+                                    победителем заводских спартакиад, а так же спартакиад и чемпионатов по футболу, проводимых
+                                    среди команд горно-металлургического комплекса Украины, финалистом Кубка Донецкой области,
+                                    чемпионом Донецкой области по мини-футболу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foto-cups"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-page-slider">
+            <div class="container">
+                <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+                <div id="wowslider-container0">
+                    <div class="ws_images"><ul>
+                        <li><img src="data0/images/2008__5.jpg" alt="2008 область 5" title="2008 область 5" id="wows0_0"/></li>
+                        <li><a href="http://wowslider.net"><img src="data0/images/_.jpg" alt="jquery slideshow" title="большой футбол" id="wows0_1"/></a></li>
+                        <li><img src="data0/images/_0.jpg" alt="достижения" title="достижения" id="wows0_2"/></li>
+                    </ul></div>
+                    <div class="ws_bullets"><div>
+                        <a href="#wows0_0" title="2008 область 5"><span><img src="data0/tooltips/2008__5.jpg" alt="2008 область 5"/>1</span></a>
+                        <a href="#wows0_1" title="большой футбол"><span><img src="data0/tooltips/_.jpg" alt="большой футбол"/>2</span></a>
+                        <a href="#wows0_2" title="достижения"><span><img src="data0/tooltips/_0.jpg" alt="достижения"/>3</span></a>
+                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">cssslider</a> by WOWSlider.com v8.7</div>
+                    <div class="ws_shadow"></div>
+                </div>
+                <!-- End WOWSlider.com BODY section -->
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <footer>
+           <div class="row">
+               <div class="col l2">
+                   <img src="" alt="logo-MK">
+                   <img src="" alt="logo-metinvest">
+               </div>
+               <div class="col l8">
+                   <p>Спонсор команды<br> ПАО Мариупольский Металургический комбинат им. Ильича</p>
+                   <div class="row">
+                       <ul class="col l4">
+                           <li>Клуб</li>
+                           <li><a href="">Руководство</a></li>
+                           <li><a href="">История</a></li>
+                           <li><a href="">Стадион</a></li>
+                       </ul> 
+                       <ul class="col l4">
+                           <li>Команда</li>
+                           <li><a href="">Игроки</a></li>
+                           <li><a href="">Тренер</a></li>
+                       </ul> 
+                       <ul class="col l4">
+                           <li>Участие в турнирах</li>
+                           <li><a href="">Достижения</a></li>
+                           <li><a href="">Игровые моменты</a></li>
+                       </ul>       
+                   </div>
+               </div>
+               <div class="col l2">
+                   <img src="" alt="logo-titan">
+                   <img src="" alt="logo-titan">
+                   <img src="" alt="logo-titan">
+               </div>
+           </div>
+
+
+       </footer>
+
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--jQuery-->
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="engine0/wowslider.js"></script>
+    <script type="text/javascript" src="engine0/script.js"></script>
+    <script>
+        $( document ).ready(function(){
+            $(".dropdown-button").dropdown();
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            var pos = $('nav').offset().top;
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= pos){
+                    $('nav').addClass('nav-fixed');
+                    $('nav').next().css('margin-top','75px');
+                    $('nav .nav-logoTitan').fadeIn();
+                } else {
+                    $('nav').removeClass('nav-fixed');
+                    $('nav').next().css('margin-top','0');
+                    $('nav .nav-logoTitan').fadeOut();//.css('display','none');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* a, a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+body {
+  box-sizing: border-box; }
+
+header {
+  color: #ffffff;
+  background: url("../img/header/header-backgr1.jpg");
+  border-bottom: 5px solid #917c73; }
+  header .row {
+    margin-bottom: 0; }
+  header h1 {
+    margin-bottom: 0.3em;
+    font-size: 3.2em; }
+  header .header-logo-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #cec1b1; }
+    header .header-logo-text span {
+      font-family: 'Crimson Text', serif;
+      font-size: 0.6em; }
+    header .header-logo-text .sponsor {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 1.5em; }
+  header .header-ladle {
+    position: relative;
+    height: 328px; }
+    header .header-ladle img {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      display: block;
+      height: inherit;
+      opacity: 0.7;
+      /*&:hover {
+                opacity: 0.4;
+                z-index: 0;
+            }*/ }
+    header .header-ladle .ladle-opacity {
+      z-index: 0; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px; } }
+
+@media (max-width: 1199px) {
+  .container {
+    width: 95%; }
+  header .header-ladle {
+    height: 300px; }
+    header .header-ladle img {
+      right: -8%; }
+  header .header-logo-text {
+    padding-bottom: 30px; } }
+
+@media (max-width: 890px) {
+  header .header-ladle {
+    height: 270px; }
+  header h1 {
+    font-size: 2.6em;
+    margin-bottom: 0.4em; }
+  header .header-logo-text {
+    padding-bottom: 20px; }
+    header .header-logo-text .sponsor {
+      font-size: 1.3em; } }
+
+@media (max-width: 710px) {
+  header .header-ladle {
+    height: 240px; }
+  header h1 {
+    font-size: 2em; }
+  header .header-logo-text .sponsor {
+    font-size: 1.1em; } }
+
+@media screen and (max-width: 480px) {
+  /* header {
+        .header-content {
+            background: none;
+            .row {
+                margin-bottom: 0;
+            }
+        }
+        h1 {
+            margin: 0;
+            font-size: 22px;
+            b {
+                display: block;
+            }
+        }
+        h4 {
+            display: none;
+        }
+        .header-logo-text {
+            padding-top: 10%;
+        }
+    }*/ }

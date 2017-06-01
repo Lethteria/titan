@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Titan</title>
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/players-page.css" rel="stylesheet">
+    <link href="css/breadcrumb.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col offset-l2 offset-m3 offset-s3  l6 m6 s7">
+                            <div class="header-logo-text">
+                                <h1><i><b>ФК ТИТАН</b><span>Мариуполь</span></i></h1>
+                                <h4 class="sponsor"><i>ПАО ММК им. Ильича</i></h4>
+                                <h4 class="sponsor"><i>конверторный цех</i></h4>
+                            </div>
+                        </div>
+                        <div class="col  l4 m3 s2">
+                            <div class="header-ladle">
+                                <img src="../img/header/header-ladle1.png" alt="логотип Титан">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col l2 m3 s3">
+                    <a  href="index.html" class="header-logo-img">
+                        <img src="img/header/header-logo2.png" class="responsive-img" alt="логотип Титан">
+                    </a>
+                </div>
+
+                <div class="col l6 m5 s6">
+                    <div class="nav-wrapp">
+                        <a href="#" data-activates="mobile-nav" class="button-collapse fa menu-icon"></a>
+                        <ul id="nav-mobile" class="hide-on-med-and-down">
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropClub">клуб</a>
+                                <ul id="dropClub" class="dropdown-content">
+                                    <li><a href="history.html">История</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="stadium.html">Стадион</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropCommand">команда</a>
+                                <ul id="dropCommand" class="dropdown-content">
+                                    <li><a href="players.html">Игроки</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="trainer.html">Тренер</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropGame">участие в турнирах</a>
+                                <ul id="dropGame" class="dropdown-content">
+                                    <li><a href="achievements.html">Достижения</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="photo-gallery.html">Игровые моменты</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l4 m4 s3">
+                    <div class="nav-search-form">
+                        <span class="fa search-icon"></span>
+                        <form action="">
+                            <div class="row">
+                                <div class="input-field col m9">
+                                    <input id="titan-search" type="text">
+                                    <label for="titan-search">Поиск по сайту</label>
+                                </div>
+                                <div class="input-field col m3">
+                                    <a class="waves-effect waves-light btn" href="#!" type="submit">найти</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-logoTitan">
+                <a href="index.html"><img src="../img/header/logo-filter.png" class="responsive-img" alt="логотип Титан"></a>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="collapsible side-nav" id="mobile-nav" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header fa chevron-down">клуб</div>
+            <ul class="collapsible-body">
+                <li><a href="history.html">История</a></li>
+                <li class="divider"></li>
+                <li><a href="stadium.html">Стадион</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="collapsible-header fa chevron-down">команда</div>
+            <ul class="collapsible-body">
+                <li><a href="players.html">Игроки</a></li>
+                <li class="divider"></li>
+                <li><a href="trainer.html">Тренер</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="collapsible-header fa chevron-down">участие в турнирах</div>
+            <ul class="collapsible-body">
+                <li><a href="achievements.html">Достижения</a></li>
+                <li class="divider"></li>
+                <li><a href="photo-gallery.html">Игровые моменты</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="breadcrumb-content">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="breadcrumb">Главная</a>
+            <a href="#!" class="breadcrumb">Игроки</a>
+        </div>
+    </div>
+
+    <div class="players-page">
+        <section class="container z-depth-1">
+            <h4 class="section-title">вратари</h4>
+
+            <div class="section-content grid grid-third-tablet grid-half-mobile">
+                    <div class="grid-item">
+                        <div class="player-card clearfix">
+                            <div class="player-card-image">
+                                <img src="../img/players/вратари/Агеев.jpg" alt="Агеев">
+                            </div>
+                            <div class="player-card-content">
+                                <p><span class="player-name">Агеев</br>Анатолий</span></p>
+                                <p>годы в команде:</p>
+                                <p>2010-2011(!)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="player-card clearfix">
+                            <div class="player-card-image">
+                                <img src="../img/players/вратари/Гилев.jpg" alt="Гилев">
+                            </div>
+                            <div class="player-card-content">
+                                <p><span class="player-name">Гилев</br>Денис</span></p>
+                                <p>годы в команде:</p>
+                                <p>2002-2010</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="player-card clearfix">
+                            <div class="player-card-image">
+                                <img src="../img/players/вратари/Котков.jpg" alt="Котков">
+                            </div>
+                            <div class="player-card-content">
+                                <p><span class="player-name">Котков</br>Сергей</span></p>
+                                <p>годы в команде:</p>
+                                <p>с 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item item-last">
+                        <div class="player-card clearfix">
+                            <div class="player-card-image">
+                                <img src="../img/players/вратари/Федунов.jpg" alt="Федунов">
+                            </div>
+                            <div class="player-card-content">
+                                <p><span class="player-name">Федунов</br>Михаил</span></p>
+                                <p>годы в команде:</p>
+                                <p>2006-2011(!)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="player-card clearfix">
+                            <div class="player-card-image">
+                                <img src="../img/players/вратари/Швец.jpg" alt="Швец">
+                            </div>
+                            <div class="player-card-content">
+                                <p><span class="player-name">Швец</br>Александр</span></p>
+                                <p>годы в команде:</p>
+                                <p>2002(!)-2006</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="player-card clearfix">
+                            <div class="player-card-image">
+                                <img src="../img/players/вратари/Яхно.jpg" alt="Яхно">
+                            </div>
+                            <div class="player-card-content">
+                                <p><span class="player-name">Яхно</br>Игорь</span></p>
+                                <p>годы в команде:</p>
+                                <p>с 2015</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="container z-depth-1">
+            <h4 class="section-title">защитники</h4>
+
+            <div class="section-content grid grid-third-tablet grid-half-mobile">
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Безлуцкий.jpg" alt="Безлуцкий">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Безлуцкий</br>Игорь</span></p>
+                            <p>годы в команде:</p>
+                            <p>2006-2011(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Ваганов.jpg" alt="Ваганов Николай">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Ваганов</br>Николай</span></p>
+                            <p>годы в команде:</p>
+                            <p>2005-2009</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Катков.jpg" alt="Катков">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Катков</br>Геннадий</span></p>
+                            <p>годы в команде:</p>
+                            <p>2003-2010</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item item-last">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Козлов.jpg" alt="Козлов">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Козлов</br>Денис</span></p>
+                            <p>годы в команде:</p>
+                            <p>2010(!)-2013(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Козловцев.jpg" alt="Козловцев">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Козловцев</br>Сергей</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2010(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Кущ.jpg" alt="Кущ">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Кущ</br>Сергей</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2006</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Матийко.jpg" alt="Матийко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Матийко</br>Владимир</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2010(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Миносян.jpg" alt="Миносян">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Миносян</br>Артур</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2010</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Розум.jpg" alt="Розум">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Розум</br>Денис</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2013</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Семенченко.jpg" alt="Семенченко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Семенченко</br>Дмитрий</span></p>
+                            <p>годы в команде:</p>
+                            <p>2006-2015</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Хаустов.jpg" alt="Хаустов">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Хаустов</br>Сергей</span></p>
+                            <p>годы в команде:</p>
+                            <p>2003-2015</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Шаруда.jpg" alt="Шаруда">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Шаруда</br>Евгений</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2002</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/защитники/Яковченко.jpg" alt="Яковченко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Яковченко</br>Алексей</span></p>
+                            <p>годы в команде:</p>
+                            <p>2004-2015</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container z-depth-1">
+            <h4 class="section-title">полузащитники</h4>
+
+            <div class="section-content grid grid-third-tablet grid-half-mobile">
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Алексеев.jpg" alt="Алексеев">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">АлексеевКонстантин</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2008</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Алексий.jpg" alt="Алексий">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Алексий</br>Сергей</span></p>
+                            <p>годы в команде:</p>
+                            <p>2010-2015(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Бужин.jpg" alt="Бужин">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Бужин</br>Дмитрий</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2002</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item item-last">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Кравченко.jpg" alt="Кравченко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Кравченко</br>Валерий</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2006</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Лапочук.jpg" alt="Лапочук">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Лапочук</br>Александр</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2011(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Мазуренко.jpg" alt="Мазуренко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Мазуренко</br>Александр</span></p>
+                            <p>годы в команде:</p>
+                            <p>2007-2015(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Мозалев.jpg" alt="Мозалев">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Мозалев</br>Сергей</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2013(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Олейник.jpg" alt="Олейник">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Олейник</br>Константин</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2013(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Пасынков.jpg" alt="Пасынков">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Пасынков</br>Евгений</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2015(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Попов.jpg" alt="Попов">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Попов</br>Иван</span></p>
+                            <p>годы в команде:</p>
+                            <p>2003-2006</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/полузащитники/Тараненко.jpg" alt="Тараненко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Тараненко</br>Вячеслав</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2011(!)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container z-depth-1">
+            <h4 class="section-title">нападающие</h4>
+
+            <div class="section-content grid grid-third-tablet grid-half-mobile">
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/нападающие/Варава.jpg" alt="Варава">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Варава</br>Александр</span></p>
+                            <p>годы в команде:</p>
+                            <p>2003-2015</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/нападающие/Гапоненко.jpg" alt="Гапоненко">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Гапоненко</br>Сергей</span></p>
+                            <p>годы в команде:</p>
+                            <p> с 2015(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/нападающие/Дрыгин.jpg" alt="Дрыгин">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Дрыгин</br>Денис</span></p>
+                            <p>годы в команде:</p>
+                            <p>2004-2010(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item item-last">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/нападающие/Лучинчин.jpg" alt="Лучинчин">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Лучинчин</br>Антон</span></p>
+                            <p>годы в команде:</p>
+                            <p>с 2013(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/нападающие/Погорецкий.jpg" alt="Погорецкий">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Погорецкий</br>Валерий</span></p>
+                            <p>годы в команде:</p>
+                            <p>2009(!)-2010(!)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="player-card clearfix">
+                        <div class="player-card-image">
+                            <img src="../img/players/нападающие/Пошелюзный.jpg" alt="Пошелюзный">
+                        </div>
+                        <div class="player-card-content">
+                            <p><span class="player-name">Пошелюзный</br>Артем</span></p>
+                            <p>годы в команде:</p>
+                            <p>2002(!)-2010(!)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="row mrn-bottom ">
+                    <div class="col m3">
+                        <img src="img/footer/logo-mmk.png" alt="logo-MK">
+                    </div>
+                    <div class="col m8">
+                        <div class="row">
+                            <ul class="col m4">
+                                <li>Клуб</li>
+                                <li><a href="">История</a></li>
+                                <li><a href="">Стадион</a></li>
+                            </ul>
+                            <ul class="col m4">
+                                <li>Команда</li>
+                                <li><a href="">Игроки</a></li>
+                                <li><a href="">Тренер</a></li>
+                            </ul>
+                            <ul class="col m4">
+                                <li>Участие в турнирах</li>
+                                <li><a href="">Достижения</a></li>
+                                <li><a href="">Игровые моменты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col m1">
+                        <a href="#!" class="footer-logo-img">
+                            <img src="img/header/logo-filter.png" alt="logo-MK" class="responsive-img" style="opacity: 0.7">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row mrn-bottom">
+                    <div class="col l3">
+                        <!--img src="img/header/logo-filter.png" alt="logo-titan"-->
+                    </div>
+                    <div class="col l9">
+                        2017 Copyright футбольная команда “ТИТАН” с
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer>
+       <a href="#!" id="back-to-top" class="hide-arrow">
+           <img src="img/main/to-top.png" alt="back-to-top" class="responsive-img">
+       </a>
+
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--jQuery-->
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $( document ).ready(function(){
+            $(".dropdown-button").dropdown();
+            $(".button-collapse").sideNav();
+            $('.collapsible').collapsible();
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            var pos = $('nav').offset().top;
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= pos){
+                    $('nav').addClass('nav-fixed');
+                    $('nav').find('.header-logo-img img').css({'width':'48px','margin-top':'-4px','margin-left':'30%'});//.fadeOut();
+                    $('nav .header-logo-img img').fadeOut();
+                    $('nav .nav-logoTitan').fadeIn();
+                    //$('nav .nav-search-form').css({'float':'right'});
+                    $('header .header-ladle img').addClass('ladle-opacity');
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('nav').removeClass('nav-fixed');
+                    $('nav .header-logo-img img').fadeIn();
+                    $('nav .header-logo-img img').css({'width':'100%','margin-top':'-30px','margin-left':'0'});
+                    $('nav .nav-logoTitan').fadeOut();//.css('display','none');
+                    $('nav .nav-search-form').css({'float':'none'});
+                    $('header .header-ladle img').removeClass('ladle-opacity');
+                    $('#back-to-top').removeClass('show');
+                }
+            });
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            $('nav .search-icon').click(function(){
+                $(this).next().toggleClass('search-open');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#back-to-top').click(function(){
+                $('html, body').animate({scrollTop: 0},500);
+            });
+        });
+    </script>
+
+</body>
+</html>

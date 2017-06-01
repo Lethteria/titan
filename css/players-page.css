@@ -1,0 +1,97 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}*/
+.clearfix:after, .grid:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.players-page {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%); }
+  .players-page section {
+    margin-bottom: 30px; }
+  .players-page .section-title {
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #3b5e42; }
+  .players-page .section-content {
+    margin: 0 30px;
+    padding-bottom: 15px; }
+  .players-page .grid {
+    max-width: 1200px; }
+  .players-page .grid-item {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 20px; }
+  .players-page .player-card {
+    background: linear-gradient(to left, #eeeeee 60%, #fefcea 40%); }
+  .players-page .player-card-image, .players-page .player-card-content {
+    float: left; }
+  .players-page .player-card-image {
+    width: 40%; }
+    .players-page .player-card-image img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #8eac97;
+      border-radius: 3px;
+      vertical-align: bottom; }
+  .players-page .player-card-content {
+    width: 60%;
+    padding-left: 10px;
+    font-size: 14px;
+    font-style: italic; }
+    .players-page .player-card-content .player-name {
+      font-style: normal; }
+    .players-page .player-card-content p {
+      margin-bottom: 0;
+      margin-top: 5px;
+      color: #224429; }
+
+#back-to-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  transition: opacity 0.5s ease-out 0.2s; }
+
+.hide-arrow {
+  opacity: 0; }
+
+.show {
+  opacity: 0.6; }
+  .show:hover {
+    transition-duration: 0.1s !important;
+    opacity: 1; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px; }
+  .players-page .player-card-content p {
+    margin-top: 10px; } }
+
+@media (min-width: 995px) {
+  .grid-third-tablet .grid-item:nth-child(4n) {
+    margin-right: 0; } }
+
+@media (max-width: 710px) {
+  #back-to-top {
+    width: 50px; } }
+
+@media (min-width: 770px) and (max-width: 994px) {
+  .grid-third-tablet .grid-item {
+    width: 32%; }
+  .grid-third-tablet .grid-item:nth-child(3n) {
+    margin-right: 0; } }
+
+@media (max-width: 769px) {
+  .grid-half-mobile .grid-item {
+    width: 47%;
+    margin-right: 6%; }
+  .grid-half-mobile .grid-item:nth-child(2n) {
+    margin-right: 0; } }

@@ -1,0 +1,133 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.indoor-soccer-page {
+  padding: 50px 0 100px;
+  background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%); }
+  .indoor-soccer-page .container {
+    padding-bottom: 10px; }
+  .indoor-soccer-page .item-title {
+    margin-bottom: 30px;
+    padding: 10px 0;
+    font-size: 24px;
+    /*color: #ffffff;
+        background-color: desaturate(lighten($green-color, 10%),10%);*/
+    color: #33663e;
+    border-top: 1px solid #dddddd;
+    border-bottom: 2px solid #2c382e;
+    background-color: #eeeeee; }
+  .indoor-soccer-page .indoor-soccer-item {
+    margin: 3% 3% 4%; }
+    .indoor-soccer-page .indoor-soccer-item .fa {
+      font: inherit; }
+      .indoor-soccer-page .indoor-soccer-item .fa:after {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .indoor-soccer-page .indoor-soccer-item .chevron-down {
+      display: block; }
+      .indoor-soccer-page .indoor-soccer-item .chevron-down:after {
+        content: "\f103";
+        margin-left: 15px;
+        height: 23px;
+        line-height: 23px; }
+  .indoor-soccer-page .section-title {
+    padding: 5px 0;
+    font-size: 18px;
+    color: #224429;
+    background-color: #DDDDDD; }
+  .indoor-soccer-page .section-foto {
+    margin-right: 20px;
+    margin-left: 20px; }
+    .indoor-soccer-page .section-foto img {
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+      .indoor-soccer-page .section-foto img:hover {
+        opacity: 0.8;
+        transform: scale(1.05, 1.05); }
+  .indoor-soccer-page .load-more {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #302622;
+    border-top: 1px solid #b3a4a4;
+    transition: color 0.3s ease; }
+    .indoor-soccer-page .load-more:hover {
+      cursor: pointer;
+      color: #a2877c; }
+  .indoor-soccer-page .pagination-wrap li.active {
+    background-color: #425747; }
+  .indoor-soccer-page .progress {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
+
+#back-to-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  transition: opacity 0.5s ease-out 0.2s; }
+
+.hide-arrow {
+  opacity: 0; }
+
+.show {
+  opacity: 0.6; }
+  .show:hover {
+    transition-duration: 0.1s !important;
+    opacity: 1; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px; } }
+
+@media (max-width: 710px) {
+  #back-to-top {
+    width: 50px; } }
+
+@media (max-width: 1199px) {
+  .photo-gallery-page .gallery-title {
+    font-size: 24px; }
+  .photo-gallery-page .item-title h5 {
+    font-size: 20px; } }
+
+@media (max-width: 890px) {
+  .photo-gallery-page {
+    padding-top: 5%;
+    padding-bottom: 7%; }
+    .photo-gallery-page .gallery-title {
+      font-size: 20px; }
+    .photo-gallery-page .gallery-photo {
+      margin-top: 5%;
+      margin-bottom: 5%; }
+    .photo-gallery-page .item-title h5 {
+      font-size: 18px; } }
+
+@media (max-width: 710px) {
+  .photo-gallery-page .photo-item {
+    width: 100%; }
+    .photo-gallery-page .photo-item:first-child {
+      margin-right: 0;
+      margin-bottom: 5%; } }
+
+@media screen and (max-width: 480px) {
+  .about-trainer .trainer-image {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px; }
+  .about-trainer .trainer-card {
+    padding: 3%; }
+  .about-trainer h4, .about-trainer h5 {
+    margin-left: 10px; } }

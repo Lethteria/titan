@@ -1,0 +1,279 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}*/
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}
+//@import 'navbar';
+$brown-color: #302622;
+$beige-color: #b3a4a4;
+$green-color: #224429;
+$light-green-color: #8eac97;
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.history-page {
+     padding-top: 70px;
+     background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 5%, #ffffff 10%);
+    .tabs {
+        margin-bottom: 20px;
+        background: #f5f5f5;
+        a {
+            color: lighten($green-color,10%);
+            &:hover {
+                color: lighten($green-color,40%);
+            }
+        }
+    }
+    .phone-indicator:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: lighten($green-color,10%);
+        transition: width .5s ease-in-out;
+    }
+    a[href^='#history-kkts'].phone-indicator:after {
+        bottom: 48px;
+    }
+    .indicator {
+        background-color: lighten($green-color,10%);
+    }
+    .about-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: justify;
+    }
+    .history-page-foto {
+        position: relative;
+        float: right;
+        width: 25%;
+        margin: 15px 0 20px 30px;
+        overflow: hidden;
+        border: 1px solid $green-color;
+        background-color: #2f3238;
+        img {
+            display: block;
+            transition: opacity 1s, transform 1s;
+            backface-visibility: hidden;
+           /* &:hover {
+                opacity: 0.5;
+                //transform: scale3d(1.05,1.05,1);
+                transform: scale(1.05)
+            }*/
+        }
+        .foto-title {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 0px;
+            padding: 5px 10px;
+
+            text-align: center;
+            background-color: #2f3238;
+            //background: darken($green-color,10%);
+            color: #eeeeee;
+            opacity: 0.9;
+
+            transition: transform 0.5s;
+            transform: translate3d(0,100px,0);
+        }
+        &:hover .foto-title {
+            transform: translate3d(0,0,0);
+        }
+        &:hover img {
+            opacity: 0.5;
+            //transform: scale3d(1.05,1.05,1);
+            transform: scale(1.05)
+        }
+    }
+    .history-page-foto.left {
+        //float: left;
+        margin: 15px 30px 10px 0;
+    }
+    .slider-wrap {
+        padding: 30px 0 15px;
+        background-color: #eeeeee;
+    }
+    .slick-initialized {
+        .slick-slide {
+            padding: 10px;
+        }
+        .fa {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 40px;
+            margin: auto;
+            cursor: pointer;
+            color: $green-color;
+            &:before {
+                font-size: 40px;
+                opacity: 0.6;
+                transition: opacity 0.5s ease-out 0.2s;
+            }
+            &:hover:before {
+                opacity: 1;
+            }
+        }
+        .fa-chevron-right{
+            right: -40px;
+        }
+        .fa-chevron-left{
+            left: -40px;
+        }
+    }
+ }
+.history-slider {
+    img {
+        transition: transform 0.5s;
+        backface-visibility: hidden;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+    }
+}
+#history-titan {
+    .item-title {
+        padding: 5px;
+        font-size: 20px;
+
+        color: #33663e;
+        border: 1px solid #dddddd;
+        border-bottom: 2px solid #2c382e;
+        background-color: #eeeeee;
+    }
+    .history-page-foto {
+        width: 40%;
+    }
+    .history-page-foto.left {
+        margin-top: 10px;
+    }
+}
+
+#back-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    //opacity: 0;
+    transition: opacity 0.5s ease-out 0.2s;
+}
+.hide-arrow {
+    opacity: 0;
+}
+.show {
+    opacity: 0.6;
+    &:hover {
+        transition-duration: 0.1s!important;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+@media (max-width : 710px) {
+    #back-to-top {
+        width: 50px;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .slider-wrap {
+        .container {
+            width: 85%;
+        }
+    }
+}
+@media (max-width : 890px) {
+    .history-page {
+        .tabs .tab a {
+            font-size: 13px;
+        }
+        .slick-initialized {
+            .fa:before {
+                font-size: 30px;
+            }
+            .fa-chevron-left {
+                 left: -30px;
+             }
+            .fa-chevron-right {
+                right: -30px;
+            }
+        }
+    }
+    #history-titan {
+        .item-title {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width : 710px) {
+    ul.tabs {
+        display: block;
+        height: auto;
+        .tab {
+            width: 100%;
+        }
+        .indicator {
+            height: 0;
+        }
+        .phone-indicator.active-ind:after {
+            width: 100%;
+        }
+    }
+    .history-page {
+        .history-page-foto {
+            width: 40%;
+        }
+        .history-page-foto.left {
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        .history-page-foto {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            .foto-title {
+                transform: translate3d(0,200px,0);
+            }
+        }
+    }
+    #history-titan {
+        .item-title {
+            font-size: 16px;
+        }
+        .history-page-foto {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width : 480px) {
+    .history-page {
+        .history-page-foto {
+            width: 50%;
+            margin-top: 0;
+        }
+    }
+    #history-titan {
+        .history-page-foto {
+            width: 100%;
+        }
+        .history-page-foto.left {
+            margin-top: 0;
+        }
+    }
+}
+@media  screen and (min-width : 320px) and (max-width : 480px) {}
+@media  screen and (min-width : 481px) and (max-width : 700px) {}
+@media  screen and (min-width : 710px) and (max-width : 1000px) {}
+@media  screen and (min-width : 1001px) and (max-width : 1024px) {}
+

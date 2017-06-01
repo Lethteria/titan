@@ -1,0 +1,49 @@
+.fancybox-nav span {
+  width: 22px;
+  visibility: visible;
+  background-image: none;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 30px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #224429;
+  background-color: #ffffff;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-out 0.2s; }
+  .fancybox-nav span:hover {
+    opacity: 1; }
+
+.fancybox-prev span {
+  left: -15px; }
+  .fancybox-prev span:before {
+    content: "\f053";
+    line-height: 34px; }
+
+.fancybox-next span {
+  right: -15px; }
+  .fancybox-next span:after {
+    content: "\f054";
+    line-height: 34px; }
+
+a.fancybox-close {
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  visibility: visible;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 25px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  background-image: none;
+  background-color: #ffffff;
+  color: #224429;
+  border-radius: 3px; }
+  a.fancybox-close:after {
+    content: "\f00d";
+    line-height: 30px;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-out 0.2s; }
+  a.fancybox-close:hover:after {
+    opacity: 1; }

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Settings</title>
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/history-page.css" rel="stylesheet">
+    <link href="css/breadcrumb.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet" media="screen">
+    <link href="css/jquery.fancybox-buttons.css" rel="stylesheet" media="screen">
+    <link href="css/jquery.fancybox-thumbs.css" rel="stylesheet" media="screen">
+    <link href="css/my-fancybox.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col offset-l2 offset-m3 offset-s3  l6 m6 s7">
+                            <div class="header-logo-text">
+                                <h1><i><b>ФК ТИТАН</b><span>Мариуполь</span></i></h1>
+                                <h4 class="sponsor"><i>ПАО ММК им. Ильича</i></h4>
+                                <h4 class="sponsor"><i>конверторный цех</i></h4>
+                            </div>
+                        </div>
+                        <div class="col  l4 m3 s2">
+                            <div class="header-ladle">
+                                <img src="../img/header/header-ladle1.png" alt="логотип Титан">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col l2 m3 s3">
+                    <a  href="index.html" class="header-logo-img">
+                        <img src="img/header/header-logo2.png" class="responsive-img" alt="логотип Титан">
+                    </a>
+                </div>
+
+                <div class="col l6 m5 s6">
+                    <div class="nav-wrapp">
+                        <a href="#" data-activates="mobile-nav" class="button-collapse fa menu-icon"></a>
+                        <ul id="nav-mobile" class="hide-on-med-and-down">
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropClub">клуб</a>
+                                <ul id="dropClub" class="dropdown-content">
+                                    <li><a href="history.html">История</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="stadium.html">Стадион</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropCommand">команда</a>
+                                <ul id="dropCommand" class="dropdown-content">
+                                    <li><a href="players.html">Игроки</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="trainer.html">Тренер</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropGame">участие в турнирах</a>
+                                <ul id="dropGame" class="dropdown-content">
+                                    <li><a href="achievements.html">Достижения</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="photo-gallery.html">Игровые моменты</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l4 m4 s3">
+                    <div class="nav-search-form">
+                        <span class="fa search-icon"></span>
+                        <form action="">
+                            <div class="row">
+                                <div class="input-field col m9">
+                                    <input id="titan-search" type="text">
+                                    <label for="titan-search">Поиск по сайту</label>
+                                </div>
+                                <div class="input-field col m3">
+                                    <a class="waves-effect waves-light btn" href="#!" type="submit">найти</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-logoTitan">
+                <a href="index.html"><img src="../img/header/logo-filter.png" class="responsive-img" alt="логотип Титан"></a>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="collapsible side-nav" id="mobile-nav" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header fa chevron-down">клуб</div>
+            <ul class="collapsible-body">
+                <li><a href="history.html">История</a></li>
+                <li class="divider"></li>
+                <li><a href="stadium.html">Стадион</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="collapsible-header fa chevron-down">команда</div>
+            <ul class="collapsible-body">
+                <li><a href="players.html">Игроки</a></li>
+                <li class="divider"></li>
+                <li><a href="trainer.html">Тренер</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="collapsible-header fa chevron-down">участие в турнирах</div>
+            <ul class="collapsible-body">
+                <li><a href="achievements.html">Достижения</a></li>
+                <li class="divider"></li>
+                <li><a href="photo-gallery.html">Игровые моменты</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="breadcrumb-content">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="breadcrumb">Главная</a>
+            <a href="#!" class="breadcrumb">История</a>
+        </div>
+    </div>
+
+    <div class="history-page">
+
+        <div class="container">
+            <ul class="tabs z-depth-1">
+                <li class="tab col s3"><a href="#history-kkts" class="active  active-ind phone-indicator">История кислородно-конвертерного цеха</a></li>
+                <li class="tab col s3"><a href="#history-titan" class="phone-indicator">История команды ТИТАН</a></li>
+            </ul>
+        </div>
+
+
+        <div id="history-kkts">
+            <div class="container">
+                <div class="about-content clearfix">
+                    <a href="../img/history/kkts2.jpg" class="history-page-foto left fancybox">
+                        <img src="../img/history/kkts2.jpg" alt="ММК им.Ильича конвертор" class="responsive-img">
+                        <p class="foto-title">Разливка метала в кислородно-конвертерном цехе</p>
+                    </a>
+
+                    <p>Кислоро́дно-конве́ртерное производство — способ получение стали путём продувки жидког
+                                о чугуна в конвертере (сосуде грушевидной формы вместимостью 50-350 т) технически
+                                чистым кислородом. Превращение чугуна в сталь происходит благодаря окислению кислородом
+                                содержащихся в чугуне примесей (кремния, марганца, углерода и др.) и последующему
+                                удалению их из сплава.</p>
+                    <p>Днем рождения кислородно-конвертерного цеха ММК им. Ильича считается 18 марта 1964г.
+                                Именно в этот день в 19.20 был введен в эксплуатацию первый конвертер. На момент пуска
+                                в Советском Союзе работало всего три кислородно-конвертерных цеха: два из них были
+                                старыми цехами, реконструированными из довоенных, с 20-30-тонными конвертерами, на
+                                Днепропетровском заводе им. Петровского и «Криворожстали», и новый цех на
+                                Нижнетагильском металлургическом комбинате с конвертерами по 100-130 тонн.</p>
+                    <p>Строительство Ильичевского ККЦ было начато в 1961 году по проекту ГИПРОМЕЗа. Ударная
+                                стройка проходила в напряженном темпе, пятнадцать месяцев ушло на постройку огромного
+                                корпуса цеха, конвертер монтировался в рекордные сроки, параллельно строились
+                                газоочистки, подстанция с трансформаторами, агрегаты оборотного цикла водоснабжения.</p>
+                    <a href="../img/history/kkts1.jpg" class="history-page-foto fancybox">
+                        <img src="../img/history/kkts1.jpg" alt="ММК им.Ильича конвертор" class="responsive-img">
+                        <p class="foto-title">Плавка в кислородно-конвертерном цехе</p>
+                    </a>
+                    <p>17 апреля 1964 года был произведен пуск второго конвертера. Уже после пуска, в
+                                процессе работы, устранялись недостатки конструкции, совершенствовали работу
+                                оборудования. Освоение нового производства было задачей не из легких, чтоб выйти на
+                                проектную мощность цеху потребовался не один год. До пуска третьего конвертера
+                                проектная мощность была освоена всего лишь на 64%.</p>
+                    <p>13 марта 1966 года был произведен пуск третьего конвертера, а в 1970 году выплавлено первые
+                                10 миллионов тонн стали. В 1972-1974 г.г. конвертеры объемом 90 куб. м. заменены на
+                                108 куб. м. Во время последующих капитальных ремонтов и реконструкций в середине 80-х
+                                и в начале 90-х конвертеры меняли на новые и увеличивали их объем. Сейчас на трех
+                                конвертерах объемом по 160 тонн каждый выплавляется около 400(200 ?) высококачественных
+                                марок стали.</p>
+                    <p>С увеличением объемов выплавки стали остро становится вопрос ее разливки. 2 июля 1993
+                                года вводят в эксплуатацию первую слябовую машину непрерывного литья заготовок (МНЛЗ-1),
+                                а 9 июля того же года — МНЛЗ-2. В декабре 1996 года достигнута проектная мощность двух
+                                МНЛЗ — разлито 1,5 млн тонн стали, а через 10 лет, в декабре 2006 года, введена в
+                                эксплуатацию МНЛЗ-3.</p>
+                    <p>Кислородно-конвертерный цех является основным цехом сталеплавильного комплекса комбината,
+                                металлопродукция которого имеет сертификаты соответствия от зарубежных и отечественных
+                                сертификационных центров и экспортируется более чем в 80 стран мира.</p>
+                </div>
+            </div>
+
+            <div class="slider-wrap">
+                <div class="container">
+                    <div class="history-slider">
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts7.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts7.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img" />
+                                    </a>
+                        </div>
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts1.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts1.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img" />
+                                    </a>
+                        </div>
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts2.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts2.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img">
+                                    </a>
+                        </div>
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts3.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts3.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img">
+                                    </a>
+                        </div>
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts4.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts4.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img">
+                                    </a>
+                        </div>
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts5.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts5.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img">
+                                    </a>
+                        </div>
+                        <div class="single-item">
+                                    <a href="../img/history/slider-kkts6.jpg" class="fancybox" data-fancybox-group="converter-plant">
+                                        <img src="../img/history/slider-kkts6.jpg" alt="ММК им.Ильича конверторный цех" class="responsive-img">
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="history-titan">
+            <div class="container">
+                <div class="about-content clearfix">
+
+                    <h5 class="center-align item-title">создание команды «ТИТАН»</h5>
+                    <p>Футбольная команда кислородно-конвертерного цеха ведет свою историю с осени 1999 года. У ее
+                        истоков стояли Сергей Мирошниченко, Игорь Гафина и Роман Воробьев. Первые турниры
+                        конвертерщики провели не особо успешно: как в спартакиаде, так и в чемпионате комбината
+                        команда заняла невысокие места. Робким был старт в первенстве города среди команд второй
+                        группы.</p>
+                    <p>Причины таких результатов традиционны для новичков: в команде нет взаимопонимания и
+                        сыгранности, а так же хотя бы мало-мальски профессионального отношения к делу на
+                        любительском уровне. Проанализировав ситуацию, администрация цеха внесла коррективы,
+                        после чего пришли первые результаты. В 2001 году «ТИТАН» стал чемпионом комбината, в
+                        спартакиаде комбината по мини-футболу завоевал серебряную награду и лишь в финалах
+                        уступил в Кубке профкома и в Кубке независимости ОАО «ММК им. Ильича».</p>
+
+                    <h5 class="center-align item-title">первые успехи в городских соревнованиях</h5>
+                    <a href="../img/history/titan-history.jpg" class="history-page-foto left fancybox">
+                        <img src="../img/history/titan-history.jpg" alt="Футбольная команда ТИТАН 2002г" class="responsive-img">
+                        <p class="foto-title">Футбольная команда "ТИТАН" на стадионе "Азовец", 200? год</p>
+                    </a>
+                    <p>В 200(?)году начальником команды становится Александр Бухало, а тренером команды
+                        — Иван Сухорутченко.</p>
+                    <p>2002 год «ТИТАН» начинал в качестве одного из лидеров футбола на комбинате, но
+                        руководство поставило перед тренером и командой задачу успешно выступить в городских
+                        соревнованиях.</p>
+                    <p>«ТИТАН» успешно стартовал в городских соревнованиях, дойдя до финала «Кубка Победы» —
+                        традиционного футбольного турнира города Мариуполя, посвященного 9 мая. Молодая команда
+                        хорошо провела сезон, став серебряным призером городского первенства по футболу, но,
+                        безусловно, самым главным достижением сезона для футболистов кислородно-конвертерного
+                        цеха стало завоевание Кубка города. Таким образом, «ТИТАН» становится одной из ведущих
+                        футбольных команд не только на комбинате, но и в городе.</p>
+
+                    <h5 class="center-align item-title">участие в областных соревнованиях</h5>
+                    <a href="../img/history/titan-history2.jpg" class="history-page-foto fancybox">
+                        <img src="../img/history/titan-history2.jpg" alt="Футбольная команда ТИТАН 2006г" class="responsive-img">
+                        <p class="foto-title">Футбольная команда "ТИТАН" - финалист кубка Донецкой области, 2006 год</p>
+                    </a>
+                    <p>На протяжении последующих нескольких лет «ТИТАН» успешно вел борьбу в чемпионатах и кубковых
+                        турнирах комбината и города. После того, как команда закрепила за собой чемпионские звания,
+                        показав, что ее лидерство не случайно, а уровень игры не уступает амбициям, руководству
+                        клуба стало ясно, что пора двигаться дальше и поднимать планку. Участие в областных
+                        соревнованиях было выходом команды на новый уровень. Однако молодой тренер конвертерщиков
+                        Сухорутченко Иван успешно справлялся с поставленными перед ним задачами.</p>
+                    <p>В 2006 году «ТИТАН» впервые выходит в финал Кубка Донецкой области, уступив трофей команде
+                        «Славхлеб», которая, к слову сказать, является одной из самых сильных и титулованных среди
+                        любительских команд Донецкой области. С 2010 по 2013 года «ТИТАН» принимает участие в
+                        чемпионате Донецкой области, проводимом под эгидой Донецкой областной федерации футбола.
+                        В 2012 году команда ККЦ участвовала в чемпионате Донбасса — первом в истории любительского
+                        футбола Донецкой и Луганской областей чемпионате, объединившем 11 местных топ-клубов
+                        (7 команд из Донецкой и 4 команды из Луганской областей).</p>
+                    <p>Достойно выглядят конвертерщики не только на поле — откровенное восхищение гостей во время
+                        домашних матчей вызывает стадион «ТИТАН», открытый 15 июля 2006 года.</p>
+
+                    <h5 class="center-align item-title">«ТИТАН» — лучший среди производственных коллективов Украины</h5>
+                    <p>Кубок «Рабочей газеты» ведет свою историю с 1973 года. Он был одним из самых массовых
+                        футбольных турниров в Советском Союзе, за что его постоянные участники окрестили
+                        «Кубком миллионов». Футбольные коллективы таких ведущих предприятий страны, как шахта им.
+                        Засядько, «Мотор Січ», «Криворожсталь» и др. были обладателями этого трофея. Для выхода в
+                        финал розыгрыша кубка команда должна победить сначала в областном, а затем и в региональном
+                        этапе соревнований, который в течении года организовывает и проводит физкультурно-спортивное
+                        общество «Украина» при поддержке Федерации футбола Украины.</p>
+                    <p>«ТИТАН» дважды (в 2007 и 2008 годах) проходил жесткие отборочные соревнования и одерживал
+                        победу в финальном этапе розыгрыша, проводимого в городе Ялта, становясь обладателем кубка
+                        «Рабочей газеты». Стоит отметить, что в 2008 году в Ялте конвертерщики выиграли все матчи,
+                        при этом не пропустив в свои ворота ни одного мяча.</p>
+
+                    <h5 class="center-align item-title">достижения в мини-футболе</h5>
+                    <p>Отдельной главой в истории команды идут успехи и достижения футболистов
+                        кислородно-конвертерного цеха в мини-футболе.</p>
+                    <a href="../img/history/titan-history3.jpg" class="history-page-foto left fancybox">
+                        <img src="../img/history/titan-history3.jpg" alt="мини-футбол Донецкой области 2008г" class="responsive-img">
+                        <p class="foto-title">Глава Донецкой областной федерации по мини-футболу … ФИО
+                            вручает кубок капитану(?) команды Александру Лапочуку</p>
+                    </a>
+                    <p>Все начиналось с заводских спартакиад по мини-футболу. Завоевав серебро в 2001 году команда
+                        повторяла достижения предыдущего турнира еще два раза подряд, занимая второе место в 2002 и
+                        2003 годах. А уже в 2004 году «ТИТАН» был лучшим среди футбольных коллективов комбината им.
+                        Ильича и в дальнейшем уступал пальму первенства всего два раза — в 2013 и 2016 годах
+                        команда ККЦ опускалась на второе место в итоговой турнирной таблице. За заводскими
+                        победами следовало участие в розыгрыше Кубка областного комитета профсоюза работников
+                        горно-металлургической промышленности, который конвертерщики выигрывали с 2005 года. В
+                        финальных играх на Кубок центрального комитета профсоюза работников металлургической и
+                        горно-добывающей промышленности Украины «ТИТАН» побеждал дважды — в 2005 и 2011 годах, а
+                        в 2004 году обладателем кубка стала команда «Ильичевец» — сборная комбината по футболу,
+                        сформированная на базе футболистов «ТИТАНА». Таким образом, «ТИТАН» в упорной борьбе показал,
+                        что он одна из лучших футбольных команд среди производственных коллективов Украины не
+                        только на большом поле, но и на паркете.</p>
+                    <p>На городских соревнованиях по мини-футболу успех пришел раньше, чем на комбанате — в 2003
+                        году конверторщики впервые завоевали Кубок города. С тех пор «ТИТАН» ежегодно принимает
+                        участие в розыгрыше Кубка Мариуполя по мини-футболу, регулярно пополняя свою копилку титулов
+                        званием обладатель кубка города. И снова после городских побед следующим этапом становился
+                        чемпионат Донецкой области помини-футболу. В 2007 году команда остановилась в шаге от
+                        чемпионства, завоевав серебро, а в 2008 — поставила цель быть первой. По словам заместителя
+                        начальника ККЦ и по совместительству начальника команды Александра Бухало, победа стала
+                        результатом проявленного мастерства и спортивного духа футболистов. Тренер «ТИТАНА» Ивана
+                        Сухорутченко отмечал, что особенно сложно пришлось в выездных матчах, а самыми трудными
+                        были игры с многократным чемпионом области — командой шахты имени Засядько.</p>
+                    <p>Изучая разные методы и системы тренировки, много экспериментируя, изменяя основной состав и
+                        давая возможность всем футболистам проявить себя, Иван Сухорутченко по-сути довел технику
+                        игры футболистов до профессионального уровня. «ТИТАН» на своем примере показал, как из
+                        рядовой цеховой команды можно не только надолго стать лидером городского мини-футбола, но
+                        и добиваться успеха на областных чемпионатах.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="row mrn-bottom ">
+                    <div class="col m3">
+                        <img src="../img/footer/logo-mmk.png" alt="logo-MK">
+                    </div>
+                    <div class="col m8">
+                        <div class="row">
+                            <ul class="col m4">
+                                <li>Клуб</li>
+                                <li><a href="">История</a></li>
+                                <li><a href="">Стадион</a></li>
+                            </ul>
+                            <ul class="col m4">
+                                <li>Команда</li>
+                                <li><a href="">Игроки</a></li>
+                                <li><a href="">Тренер</a></li>
+                            </ul>
+                            <ul class="col m4">
+                                <li>Участие в турнирах</li>
+                                <li><a href="">Достижения</a></li>
+                                <li><a href="">Игровые моменты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col m1">
+                        <a href="#!" class="footer-logo-img">
+                            <img src="img/header/logo-filter.png" alt="logo-MK" class="responsive-img" style="opacity: 0.7">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row mrn-bottom">
+                    <div class="col l3">
+                        <!--img src="img/header/logo-filter.png" alt="logo-titan"-->
+                    </div>
+                    <div class="col l9">
+                        2017 Copyright футбольная команда “ТИТАН” с
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer>
+       <a href="#!" id="back-to-top" class="hide-arrow">
+           <img src="img/main/to-top.png" alt="back-to-top" class="responsive-img">
+       </a>
+
+   
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--jQuery-->
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/history.js"></script>
+    <script>
+        $( document ).ready(function(){
+            $(".dropdown-button").dropdown();
+            $(".button-collapse").sideNav();
+            $('.collapsible').collapsible();
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            var pos = $('nav').offset().top;
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= pos){
+                    $('nav').addClass('nav-fixed');
+                    $('nav').find('.header-logo-img img').css({'width':'48px','margin-top':'-4px','margin-left':'30%'});//.fadeOut();
+                    $('nav .header-logo-img img').fadeOut();
+                    $('nav .nav-logoTitan').fadeIn();
+                    //$('nav .nav-search-form').css({'float':'right'});
+                    $('header .header-ladle img').addClass('ladle-opacity');
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('nav').removeClass('nav-fixed');
+                    $('nav .header-logo-img img').fadeIn();
+                    $('nav .header-logo-img img').css({'width':'100%','margin-top':'-30px','margin-left':'0'});
+                    $('nav .nav-logoTitan').fadeOut();//.css('display','none');
+                    $('nav .nav-search-form').css({'float':'none'});
+                    $('header .header-ladle img').removeClass('ladle-opacity');
+                    $('#back-to-top').removeClass('show');
+                }
+            });
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            $('nav .search-icon').click(function(){
+                $(this).next().toggleClass('search-open');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#back-to-top').click(function(){
+                $('html, body').animate({scrollTop: 0},500);
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var docWidth = $(document).width();
+            if (docWidth<480){
+                $("a[href^='#history-kkts']").text('история конвертерного цеха');
+            }
+            $('.tab a').click(function(){
+                $('.tab a').removeClass('active-ind');
+                $(this).addClass('active-ind');
+            });
+        });
+    </script>
+
+</body>
+</html>

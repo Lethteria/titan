@@ -1,0 +1,94 @@
+* a, a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+.btn:active:focus, .btn:focus, button:focus {
+  outline: none; }
+
+.mrn-bottom {
+  margin-bottom: 0; }
+
+footer {
+  color: #ffffff;
+  background-color: #224429; }
+  footer a {
+    color: #ffffff; }
+  footer .footer-copyright {
+    padding: 20px 0;
+    font-size: 13px;
+    color: #eee;
+    background-color: #233d28;
+    /*img {
+            display: block;
+            margin: 0 auto;
+            width: 20%;
+        }*/ }
+  footer .footer-menu {
+    padding-top: 20px;
+    background: url("../img/footer/footer-backgr1.png") no-repeat;
+    background-size: 100% 100%; }
+
+.footer-menu img {
+  display: block;
+  margin: 10px auto 0; }
+
+.footer-menu ul li {
+  padding: 1px 0; }
+  .footer-menu ul li a:hover {
+    color: #b8aaaa; }
+  .footer-menu ul li a {
+    position: relative;
+    padding-bottom: 3px; }
+    .footer-menu ul li a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #b3a4a4;
+      transition: width .5s ease-in-out; }
+    .footer-menu ul li a:hover:after {
+      width: 100%; }
+
+.footer-menu ul li:first-child {
+  margin-bottom: 4%;
+  font-size: 18px;
+  color: #ddd; }
+
+.footer-logo-img img {
+  transition: all 0.7s; }
+  .footer-logo-img img:hover {
+    transform: scale(1.1); }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px; } }
+
+@media (max-width: 992px) {
+  .footer-menu .logo-footer {
+    display: none; } }
+
+@media (max-width: 710px) {
+  footer {
+    text-align: center; }
+    footer .footer-menu {
+      background-size: cover;
+      padding-top: 0; }
+      footer .footer-menu ul {
+        margin-bottom: 0; }
+        footer .footer-menu ul li:first-child {
+          margin-bottom: 5px;
+          position: relative;
+          font-size: 16px; }
+          footer .footer-menu ul li:first-child:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 1px;
+            background-color: #abc2b2;
+            opacity: 0.7; }
+    footer .footer-copyright {
+      padding-top: 10px;
+      padding-bottom: 10px; } }

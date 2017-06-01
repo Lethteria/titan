@@ -1,0 +1,243 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.btn:active:focus, .btn:focus, button:focus  {
+    outline: none;
+}*/
+//@import 'navbar';
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+$brown-color: #302622;
+$beige-color: #b3a4a4;
+$green-color: #224429;
+$light-green-color: #8eac97;
+
+.trainer-page {
+    padding: 70px 0 100px;
+    background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%);
+}
+
+.trainer-page-content {
+    padding: 20px 0 5px;
+    background: #ffffff;
+}
+.about-trainer {
+    margin: 5% 10%;
+
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+    color: $brown-color;
+    .trainer-image {
+        display: inline-block;
+        float: left;
+        max-width: 35%;
+        margin-right: 5%;
+        img {
+            display: block;
+        }
+    }
+    .trainer-card {
+        padding-right: 2%;
+        p {
+            margin: 10px 0;
+        }
+        span {
+            font-size: 20px;
+            color: lighten($green-color,10%);
+        }
+
+    }
+}
+.trainer-foto {
+    margin: 2% 50px;
+    .slick-initialized {
+        .slick-slide {
+            position: relative;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        .fa.slick-arrow {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 40px;
+            margin: auto;
+            cursor: pointer;
+            color: $green-color;
+            &:before {
+                font-size: 40px;
+                opacity: 0.6;
+                transition: opacity 0.5s ease-out 0.2s;
+            }
+            &:hover:before {
+                opacity: 1;
+            }
+        }
+        .fa-chevron-right{
+            right: -40px;
+        }
+        .fa-chevron-left{
+            left: -40px;
+        }
+        a {
+            position: relative;
+            display: block;
+            &:before {
+                 position: absolute;
+                 top: -10px;
+                 right: -10px;
+                 bottom: -10px;
+                 left: -10px;
+                 border: 1px solid $brown-color;
+                 content: '';
+                 -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                 transition: opacity 0.35s, transform 0.35s;
+             }
+            &:after {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                bottom: -10px;
+                left: -10px;
+                content: '';
+                opacity: 0;
+                background-color: #eee;
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+            }
+            &:hover:before {
+                transform: scale3d(0.8,0.7,1);
+            }
+            &:hover:after {
+                opacity: 0.5;
+                transform: scale3d(0.8,0.7,1);
+            }
+        }
+        a.fa-search-plus {
+            &:after {
+                content: "\f00e";
+                padding-top: 25%;
+
+                font-size: 60px;
+                text-align: center;
+                color: lighten($brown-color,10%);
+            }
+            &:hover:after {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+#back-to-top {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    //opacity: 0;
+    transition: opacity 0.5s ease-out 0.2s;
+}
+.hide-arrow {
+    opacity: 0;
+}
+.show {
+    opacity: 0.6;
+    &:hover {
+        transition-duration: 0.1s!important;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+@media (max-width : 710px) {
+    #back-to-top {
+        width: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-trainer {
+        .trainer-card {
+            font-size: 16px;
+            h4 {
+                font-size: 24px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width : 890px) {
+    .about-trainer {
+        .trainer-card {
+            font-size: 14px;
+            h4 {
+                font-size: 20px;
+            }
+            h5 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 16px;
+            }
+            p {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media (max-width : 710px) {
+    .about-trainer {
+        margin: 2% 5% 5%;
+        .trainer-image {
+            max-width: 50%;
+        }
+        .trainer-card {
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width : 480px) {
+    .about-trainer {
+        .trainer-image {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .trainer-card {
+            padding: 3%;
+        }
+        h4, h5 {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media  screen and (min-width : 320px) and (max-width : 480px) {}
+@media  screen and (min-width : 481px) and (max-width : 700px) {}
+@media  screen and (min-width : 710px) and (max-width : 1000px) {}
+@media  screen and (min-width : 1001px) and (max-width : 1024px) {}
+
