@@ -165,7 +165,7 @@ nav {
 .nav-fixed {
   position: fixed;
   top: 0;
-  z-index: 1000; }
+  z-index: 998; }
 
 #titan-search[disabled] {
   box-sizing: border-box;
