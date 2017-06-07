@@ -14,14 +14,14 @@
     <link href="css/footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet"-->
+
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet"-->
     <!--link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
-	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-	<!-- End WOWSlider.com HEAD section -->
-</head>
+
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+
 <body>
 
     <header>
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col l2 m3 s3">
                     <a  href="index.html" class="header-logo-img">
-                        <img src="img/header/header-logo2.png" class="responsive-img" alt="логотип Титан">
+                        <img src="img/header/header-logo.png" class="responsive-img" alt="логотип Титан">
                     </a>
                 </div>
 
@@ -87,7 +87,7 @@
                 <div class="col l4 m4 s3">
                     <div class="nav-search-form">
                         <span class="fa search-icon"></span>
-                        <form action="">
+                        <form action="" id="search-form">
                             <div class="row">
                                 <div class="input-field col m9">
                                     <input id="titan-search" type="text">
@@ -159,27 +159,30 @@
 
         <section class="main-page-slider">
             <div class="container">
-	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="data1/images/_0.jpg" alt="достижения" title="достижения" id="wows1_0"/></li>
-		<li><a href="http://wowslider.net"><img src="data1/images/2008__5.jpg" alt="http://wowslider.net/" title="2008 область 5" id="wows1_1"/></a></li>
-		<li><img src="data1/images/_.jpg" alt="большой футбол" title="большой футбол" id="wows1_2"/></li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#wows1_0" title="достижения"><span><img src="data1/tooltips/_0.jpg" alt="достижения"/>1</span></a>
-		<a href="#wows1_1" title="2008 область 5"><span><img src="data1/tooltips/2008__5.jpg" alt="2008 область 5"/>2</span></a>
-		<a href="#wows1_2" title="большой футбол"><span><img src="data1/tooltips/_.jpg" alt="большой футбол"/>3</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider</a> by WOWSlider.com v8.7</div>
-	<div class="ws_shadow"></div>
-	</div>
-	<!-- End WOWSlider.com BODY section --><!-- End WOWSlider.com BODY section -->
+
+                <div id="wowslider-container1">
+                    <div class="ws_images"><ul>
+                        <li><a href="achievements-gallery.html"><img src="data1/images/_0.jpg" alt="" title="" id="wows1_0"/></a></li>
+                        <li><a href="football.html"><img src="data1/images/_.jpg" alt="" title="" id="wows1_1"/></a></li>
+                        <li><a href="indoor-soccer.html"><img src="data1/images/_1.jpg" alt="" title="" id="wows1_2"/></a></li>
+                    </ul></div>
+                    <div class="ws_thumbs">
+                        <div>
+                            <a href="#" title=""><img src="data1/tooltips/_0.jpg" alt="" /></a>
+                            <a href="#" title=""><img src="data1/tooltips/_.jpg" alt="" /></a>
+                            <a href="#" title=""><img src="data1/tooltips/_1.jpg" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+                    <div class="ws_shadow"></div>
+                </div>
+
             </div>
 
         </section>
 
-    </div>
 
+    </div>
 
     <footer>
         <div class="footer-menu">
@@ -216,69 +219,24 @@
                 <div class="row mrn-bottom">
 
                     <div class="col offset-l3 l9 m12 s12">
-                        2017 Copyright футбольная команда “ТИТАН” с
+                        © 2017 Футбольная команда “ТИТАН” (г. Мариуполь, ККЦ ММК им. Ильича)
                     </div>
                 </div>
             </div>
         </div>
        </footer>
 
-    <!--footer>
-        <div class="footer-menu">
-            <div class="container">
-                <div class="row mrn-bottom ">
-                    <div class="col m3">
-                        <img src="img/footer/logo-mmk.png" alt="logo-MK">
-                    </div>
-                    <div class="col m8">
-                        <div class="row">
-                            <ul class="col m4">
-                                <li>Клуб</li>
-                                <li><a href="">История</a></li>
-                                <li><a href="">Стадион</a></li>
-                            </ul>
-                            <ul class="col m4">
-                                <li>Команда</li>
-                                <li><a href="">Игроки</a></li>
-                                <li><a href="">Тренер</a></li>
-                            </ul>
-                            <ul class="col m4">
-                                <li>Участие в турнирах</li>
-                                <li><a href="">Достижения</a></li>
-                                <li><a href="">Игровые моменты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col m1">
-                        <a href="#!" class="footer-logo-img">
-                            <img src="img/header/logo-filter.png" alt="logo-MK" class="responsive-img" style="opacity: 0.7">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row mrn-bottom">
-                    <div class="col l3"></div>
-                    <div class="col l9">
-                        2017 Copyright футбольная команда “ТИТАН” с
-                    </div>
-                </div>
-            </div>
-        </div>
-       </footer-->
        <a href="#!" id="back-to-top" class="hide-arrow">
            <img src="img/main/to-top.png" alt="back-to-top" class="responsive-img">
        </a>
 
    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--jQuery-->
     <script src="js/materialize.min.js"></script>
     <script type="text/javascript" src="engine1/wowslider.js"></script>
     <script type="text/javascript" src="engine1/script.js"></script>
+    <script src="js/search.js"></script>
     <script>
         $( document ).ready(function(){
             $(".dropdown-button").dropdown();

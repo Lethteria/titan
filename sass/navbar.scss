@@ -77,30 +77,30 @@ nav {
             width: 893%;
             padding: 0 20px;
 
-            //-webkit-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
-            //-moz-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
-            //-ms-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
-            //-o-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+            -webkit-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+            -moz-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+            -ms-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+            -o-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
             transition: height 0.7s cubic-bezier(1, 0, 0, 1);
-            //-webkit-transform: translateZ(0);
-            //-moz-transform: translateZ(0);
-            //-ms-transform: translateZ(0);
-            //-o-transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
             transform: translateZ(0);
             height: 0;
             overflow: hidden;
             background-color: darken($brown-color, 5%);
         }
         .search-open {
-           // -webkit-transition-duration: 0.4s;
-           // -moz-transition-duration: 0.4s;
-            //-ms-transition-duration: 0.4s;
-            //-o-transition-duration: 0.4s;
+            -webkit-transition-duration: 0.4s;
+            -moz-transition-duration: 0.4s;
+            -ms-transition-duration: 0.4s;
+            -o-transition-duration: 0.4s;
             transition-duration: 0.4s;
-            //-webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-            //-moz-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-            //-ms-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-            //-o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            -moz-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            -ms-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
             transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
             height: 90px;
             //padding: 30px 20px 10px;
@@ -164,13 +164,13 @@ nav {
         color: #9e9e9e;
 
         background-color: transparent;
-        border: 2px solid $beige-color;//desaturate((lighten($brown-color, 35%)), 5);
+        border: 2px solid $beige-color;
         border-radius: 0;
 
         &:hover {
             color: (lighten($beige-color, 15%));
             background-color: (darken($beige-color, 40%));
-            border: 2px solid (lighten($beige-color, 10%));//(darken($beige-color, 20%));
+            border: 2px solid (lighten($beige-color, 10%));
         }
     }
     .menu-icon:before {
@@ -223,20 +223,16 @@ nav {
 .nav-fixed {
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
+}
+#titan-search[disabled] {
+    box-sizing: border-box;
+    color: inherit;
+    border-bottom-color: inherit;
 }
 
 
-
-@media (min-width: 1200px) {
-    div.container {
-        width: 1100px;
-    }
-}
 @media (max-width: 1199px) {
-    /*.container {
-        width: 95%;
-    }*/
     nav {
         ul {
             a {
@@ -254,17 +250,15 @@ nav {
             font-size: 16px;
         }
     }
-    /*header {
-        .header-ladle {
-            height: 300px;
-            img {
-                right: -8%;
+}
+@media (max-width : 992px) {
+    nav {
+        .nav-search-form {
+            form {
+                width: 846%;
             }
         }
-        .header-logo-text {
-            padding-bottom: 30px;
-        }
-    }*/
+    }
 }
 @media (max-width : 890px) {
     nav {
@@ -281,9 +275,14 @@ nav {
         }
     }
 }
-
-@media  screen and (min-width : 320px) and (max-width : 480px) {}
-@media  screen and (min-width : 481px) and (max-width : 700px) {}
-@media  screen and (min-width : 710px) and (max-width : 1000px) {}
-@media  screen and (min-width : 1001px) and (max-width : 1024px) {}
+@media (max-width : 710px) {
+    .nav-search-form {
+        display: none;
+    }
+}
+@media (max-width : 480px) {
+    nav .header-logo-img img {
+        margin-top: -10px;
+    }
+}
 

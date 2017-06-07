@@ -10,3 +10,26 @@
       color: #33663e; }
   .breadcrumb-content .container {
     padding: 0 30px; }
+
+@media (max-width: 710px) {
+  .breadcrumb-content .breadcrumb {
+    font-size: 14px; }
+    .breadcrumb-content .breadcrumb:before {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px; } }
+
+@media (max-width: 480px) {
+  .breadcrumb-content {
+    height: auto;
+    line-height: normal; }
+    .breadcrumb-content .container {
+      padding-top: 5px;
+      padding-bottom: 5px; }
+    .breadcrumb-content .breadcrumb {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 13px; }
+      .breadcrumb-content .breadcrumb:before {
+        margin: 0;
+        height: auto; } }

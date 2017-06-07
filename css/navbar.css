@@ -53,13 +53,29 @@ nav {
       top: 49px;
       width: 893%;
       padding: 0 20px;
+      -webkit-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+      -moz-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+      -ms-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+      -o-transition: height 0.7s cubic-bezier(1, 0, 0, 1);
       transition: height 0.7s cubic-bezier(1, 0, 0, 1);
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
       transform: translateZ(0);
       height: 0;
       overflow: hidden;
       background-color: #211a17; }
     nav .nav-search-form .search-open {
+      -webkit-transition-duration: 0.4s;
+      -moz-transition-duration: 0.4s;
+      -ms-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
       transition-duration: 0.4s;
+      -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      -moz-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
       transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
       height: 90px;
       overflow: visible;
@@ -152,16 +168,14 @@ nav {
 .nav-fixed {
   position: fixed;
   top: 0;
-  z-index: 10; }
+  z-index: 1000; }
 
-@media (min-width: 1200px) {
-  div.container {
-    width: 1100px; } }
+#titan-search[disabled] {
+  box-sizing: border-box;
+  color: inherit;
+  border-bottom-color: inherit; }
 
 @media (max-width: 1199px) {
-  /*.container {
-        width: 95%;
-    }*/
   nav ul a {
     font-size: 16px;
     padding: 0 10px; }
@@ -170,18 +184,11 @@ nav {
   nav .hide-on-med-and-down {
     display: block !important; }
   nav .dropdown-content li > a {
-    font-size: 16px; }
-  /*header {
-        .header-ladle {
-            height: 300px;
-            img {
-                right: -8%;
-            }
-        }
-        .header-logo-text {
-            padding-bottom: 30px;
-        }
-    }*/ }
+    font-size: 16px; } }
+
+@media (max-width: 992px) {
+  nav .nav-search-form form {
+    width: 846%; } }
 
 @media (max-width: 890px) {
   nav a.button-collapse {
@@ -191,3 +198,11 @@ nav {
       line-height: 46px; }
   nav .hide-on-med-and-down {
     display: none !important; } }
+
+@media (max-width: 710px) {
+  .nav-search-form {
+    display: none; } }
+
+@media (max-width: 480px) {
+  nav .header-logo-img img {
+    margin-top: -10px; } }

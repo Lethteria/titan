@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Settings</title>
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/breadcrumb.css" rel="stylesheet">
+    <link href="css/certificate-page.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet"-->
+    <!--link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet" media="screen">
+    <link href="css/jquery.fancybox-buttons.css" rel="stylesheet" media="screen">
+    <link href="css/jquery.fancybox-thumbs.css" rel="stylesheet" media="screen">
+    <link href="css/my-fancybox.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col offset-l2 offset-m3 offset-s3  l6 m6 s7">
+                            <div class="header-logo-text">
+                                <h1><i><b>ФК ТИТАН</b><span>Мариуполь</span></i></h1>
+                                <h4 class="sponsor"><i>ПАО ММК им. Ильича</i></h4>
+                                <h4 class="sponsor"><i>конверторный цех</i></h4>
+                            </div>
+                        </div>
+                        <div class="col  l4 m3 s2">
+                            <div class="header-ladle">
+                                <img src="../img/header/header-ladle1.png" alt="логотип Титан">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col l2 m3 s3">
+                    <a  href="index.html" class="header-logo-img">
+                        <img src="img/header/header-logo.png" class="responsive-img" alt="логотип Титан">
+                    </a>
+                </div>
+
+                <div class="col l6 m5 s6">
+                    <div class="nav-wrapp">
+                        <a href="#" data-activates="mobile-nav" class="button-collapse fa menu-icon"></a>
+                        <ul id="nav-mobile" class="hide-on-med-and-down">
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropClub">клуб</a>
+                                <ul id="dropClub" class="dropdown-content">
+                                    <li><a href="history.html">История</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="stadium.html">Стадион</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropCommand">команда</a>
+                                <ul id="dropCommand" class="dropdown-content">
+                                    <li><a href="players.html">Игроки</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="trainer.html">Тренер</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-button" data-activates="dropGame">участие в турнирах</a>
+                                <ul id="dropGame" class="dropdown-content">
+                                    <li><a href="achievements.html">Достижения</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="photo-gallery.html">Игровые моменты</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l4 m4 s3">
+                    <div class="nav-search-form">
+                        <span class="fa search-icon"></span>
+                        <form action="">
+                            <div class="row">
+                                <div class="input-field col m9">
+                                    <input id="titan-search" type="text">
+                                    <label for="titan-search">Поиск по сайту</label>
+                                </div>
+                                <div class="input-field col m3">
+                                    <a class="waves-effect waves-light btn" href="#!" type="submit">найти</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-logoTitan">
+                <a href="index.html"><img src="../img/header/logo-filter.png" class="responsive-img" alt="логотип Титан"></a>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="collapsible side-nav" id="mobile-nav" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header fa chevron-down">клуб</div>
+            <ul class="collapsible-body">
+                <li><a href="history.html">История</a></li>
+                <li class="divider"></li>
+                <li><a href="stadium.html">Стадион</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="collapsible-header fa chevron-down">команда</div>
+            <ul class="collapsible-body">
+                <li><a href="players.html">Игроки</a></li>
+                <li class="divider"></li>
+                <li><a href="trainer.html">Тренер</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="collapsible-header fa chevron-down">участие в турнирах</div>
+            <ul class="collapsible-body">
+                <li><a href="achievements.html">Достижения</a></li>
+                <li class="divider"></li>
+                <li><a href="photo-gallery.html">Игровые моменты</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="breadcrumb-content">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="breadcrumb">Главная</a>
+            <a href="achievements.html" class="breadcrumb">Достижения</a>
+            <a href="#!" class="breadcrumb">Грамоты и сертификаты</a>
+        </div>
+    </div>
+
+    <div class="achievements-gallery-page certificate-page">
+        <div class="container z-depth-1">
+
+            <div id="page-wrap">
+
+                <h4 class="center-align item-title">2002 год</h4>
+
+                <div class="section-foto">
+                    <div class="row">
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2002_1.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2002_1.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2002_2.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2002_2.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2002_3.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2002_3.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2002_4.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2002_4.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="center-align item-title">2003 год</h4>
+
+                <div class="section-foto">
+                    <div class="row">
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2003_1.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2003_1.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2003_2.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2003_2.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2003_3.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2003_3.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="center-align item-title">2004 год</h4>
+
+                <div class="section-foto">
+                    <div class="row">
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2004_1.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2004_1.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2004_2.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2004_2.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l6 m6 s12">
+                            <a href="../img/certificate/грамота_фк_Титан_2004_3.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2004_3.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2004_4.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2004_4.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h4 class="center-align item-title">2005 год</h4>
+
+                <div class="section-foto">
+                    <div class="row">
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2005_3.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2005_3.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2005_2.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2005_2.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2005_1.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2005_1.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="center-align item-title">2006 год</h4>
+
+                <div class="section-foto">
+                    <div class="row">
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2006_1.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2006_1.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2006_2.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2006_2.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2006_3.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2006_3.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                        <div class="col l3 m3 s6">
+                            <a href="../img/certificate/грамота_фк_Титан_2006_4.jpg" class="fancybox" data-fancybox-group="achievements-gallery">
+                                <img src="../img/certificate/грамота_фк_Титан_2006_4.jpg" class="responsive-img" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pagination-wrap">
+                <ul class="pagination center-align" id="pagin">
+                    <li class="disabled"><a href="#prev-arrow" id="prev-arrow"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#load-page-1">1</a></li>
+                    <li class="waves-effect"><a href="#load-page-2">2</a></li>
+                    <li class="waves-effect"><a href="#load-page-3">3</a></li>
+                    <li class="waves-effect"><a href="#next-arrow" id="next-arrow"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="row mrn-bottom ">
+                    <div class="col offset-l1 l2 m3 s12">
+                        <img src="img/header/logo-filter.png" alt="logo-MK" class="responsive-img logo-footer" style="opacity: 0.7; width: 50%">
+                    </div>
+                    <div class="col l8 m12 s12">
+                        <div class="row">
+                            <ul class="col m4 s12">
+                                <li>Клуб</li>
+                                <li><a href="">История</a></li>
+                                <li><a href="">Стадион</a></li>
+                            </ul>
+                            <ul class="col m4 s12">
+                                <li>Команда</li>
+                                <li><a href="">Игроки</a></li>
+                                <li><a href="">Тренер</a></li>
+                            </ul>
+                            <ul class="col m4 s12">
+                                <li>Участие в турнирах</li>
+                                <li><a href="">Достижения</a></li>
+                                <li><a href="">Игровые моменты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row mrn-bottom">
+
+                    <div class="col offset-l3 l9 m12 s12">
+                        © 2017 Футбольная команда “ТИТАН” (г. Мариуполь, ККЦ ММК им. Ильича)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <a href="#!" id="back-to-top" class="hide-arrow">
+           <img src="img/main/to-top.png" alt="back-to-top" class="responsive-img">
+       </a>
+
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--jQuery-->
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/paginator.js"></script>
+    <script>
+        $( document ).ready(function(){
+            $(".dropdown-button").dropdown();
+            $(".button-collapse").sideNav();
+            $('.collapsible').collapsible();
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            var pos = $('nav').offset().top;
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= pos){
+                    $('nav').addClass('nav-fixed');
+                    $('nav').find('.header-logo-img img').css({'width':'48px','margin-top':'-4px','margin-left':'30%'});//.fadeOut();
+                    $('nav .header-logo-img img').fadeOut();
+                    $('nav .nav-logoTitan').fadeIn();
+                    //$('nav .nav-search-form').css({'float':'right'});
+                    $('header .header-ladle img').addClass('ladle-opacity');
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('nav').removeClass('nav-fixed');
+                    $('nav .header-logo-img img').fadeIn();
+                    $('nav .header-logo-img img').css({'width':'100%','margin-top':'-30px','margin-left':'0'});
+                    $('nav .nav-logoTitan').fadeOut();//.css('display','none');
+                    $('nav .nav-search-form').css({'float':'none'});
+                    $('header .header-ladle img').removeClass('ladle-opacity');
+                    $('#back-to-top').removeClass('show');
+                }
+            });
+        });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            $('nav .search-icon').click(function(){
+                $(this).next().toggleClass('search-open');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#back-to-top').click(function(){
+                $('html, body').animate({scrollTop: 0},500);
+                //return false;
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
+    <script> //переход по страницам
+    $(document).ready(function(){
+        $('#pagin').find('a').click(function(){
+            var $this = $(this);
+            MyPagin('certificate-to-load',$this);
+        });
+    });
+    </script>
+</body>
+</html>

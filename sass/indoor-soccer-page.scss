@@ -1,10 +1,4 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}
-.btn:active:focus, .btn:focus, button:focus  {
-    outline: none;
-}*/
-//@import 'navbar';
+
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
@@ -111,35 +105,6 @@ $light-green-color: #8eac97;
 }
 
 
-#back-to-top {
-    position: fixed;
-    right: 5%;
-    bottom: 10%;
-    //opacity: 0;
-    transition: opacity 0.5s ease-out 0.2s;
-}
-.hide-arrow {
-    opacity: 0;
-}
-.show {
-    opacity: 0.6;
-    &:hover {
-        transition-duration: 0.1s!important;
-        opacity: 1;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1100px;
-    }
-}
-@media (max-width : 710px) {
-    #back-to-top {
-        width: 50px;
-    }
-}
-
 @media (max-width: 1199px) {
     .photo-gallery-page {
         .gallery-title {
@@ -164,8 +129,6 @@ $light-green-color: #8eac97;
             margin-bottom: 5%;
         }
         .item-title {
-            //padding-left: 20%;
-            //padding-right: 20%;
             h5 {
                 font-size: 18px;
             }
@@ -198,9 +161,4 @@ $light-green-color: #8eac97;
         }
     }
 }
-
-@media  screen and (min-width : 320px) and (max-width : 480px) {}
-@media  screen and (min-width : 481px) and (max-width : 700px) {}
-@media  screen and (min-width : 710px) and (max-width : 1000px) {}
-@media  screen and (min-width : 1001px) and (max-width : 1024px) {}
 

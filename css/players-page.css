@@ -31,7 +31,7 @@
     margin-right: 2%;
     margin-bottom: 20px; }
   .players-page .player-card {
-    background: linear-gradient(to left, #eeeeee 60%, #fefcea 40%); }
+    background-color: #eeeeee; }
   .players-page .player-card-image, .players-page .player-card-content {
     float: left; }
   .players-page .player-card-image {
@@ -54,44 +54,31 @@
       margin-top: 5px;
       color: #224429; }
 
-#back-to-top {
-  position: fixed;
-  right: 5%;
-  bottom: 10%;
-  transition: opacity 0.5s ease-out 0.2s; }
-
-.hide-arrow {
-  opacity: 0; }
-
-.show {
-  opacity: 0.6; }
-  .show:hover {
-    transition-duration: 0.1s !important;
-    opacity: 1; }
-
 @media (min-width: 1200px) {
-  .container {
-    width: 1100px; }
   .players-page .player-card-content p {
     margin-top: 10px; } }
 
-@media (min-width: 995px) {
+@media (min-width: 1100px) {
   .grid-third-tablet .grid-item:nth-child(4n) {
     margin-right: 0; } }
 
 @media (max-width: 710px) {
-  #back-to-top {
-    width: 50px; } }
+  .players-page {
+    padding: 20px 0; } }
 
-@media (min-width: 770px) and (max-width: 994px) {
+@media (min-width: 800px) and (max-width: 1099px) {
   .grid-third-tablet .grid-item {
     width: 32%; }
   .grid-third-tablet .grid-item:nth-child(3n) {
     margin-right: 0; } }
 
-@media (max-width: 769px) {
+@media (min-width: 600px) and (max-width: 799px) {
   .grid-half-mobile .grid-item {
     width: 47%;
     margin-right: 6%; }
   .grid-half-mobile .grid-item:nth-child(2n) {
     margin-right: 0; } }
+
+@media (max-width: 599px) {
+  .grid-half-mobile .grid-item {
+    width: 90%; } }

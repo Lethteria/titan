@@ -1,20 +1,11 @@
 
-$brown-color: #302622;
-$beige-color: #b3a4a4;
 $green-color: #224429;
-$light-green-color: #8eac97;
-@mixin scale($time) {
-    transition: all $time;
-    &:hover {
-        transform: scale(1.1);
-    }
-}
+
 .breadcrumb-content {
     height: 40px;
     line-height: 40px;
     background-color: #eeeeee;
     border-bottom: 2px solid lighten($green-color,10%);
-    //background-color: #476148;
     .breadcrumb {
         font-size: 16px;
         color: lighten($green-color,10%);
@@ -24,5 +15,36 @@ $light-green-color: #8eac97;
     }
     .container {
         padding: 0 30px;
+    }
+}
+@media (max-width : 710px){
+    .breadcrumb-content {
+        .breadcrumb {
+            font-size: 14px;
+            &:before {
+                margin-left: 5px;
+                margin-right: 5px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width : 480px){
+    .breadcrumb-content {
+        height: auto;
+        line-height: normal;
+        .container {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .breadcrumb {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 13px;
+            &:before {
+                margin: 0;
+                height: auto;
+            }
+        }
     }
 }

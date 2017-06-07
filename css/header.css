@@ -6,7 +6,7 @@ body {
 
 header {
   color: #ffffff;
-  background: url("../img/header/header-backgr1.jpg");
+  background: url("../img/header/header-backgr.jpg");
   border-bottom: 5px solid #917c73; }
   header .row {
     margin-bottom: 0; }
@@ -75,24 +75,10 @@ header {
     font-size: 1.1em; } }
 
 @media screen and (max-width: 480px) {
-  /* header {
-        .header-content {
-            background: none;
-            .row {
-                margin-bottom: 0;
-            }
-        }
-        h1 {
-            margin: 0;
-            font-size: 22px;
-            b {
-                display: block;
-            }
-        }
-        h4 {
-            display: none;
-        }
-        .header-logo-text {
-            padding-top: 10%;
-        }
-    }*/ }
+  header h1 {
+    margin-top: 10px;
+    font-size: 16px; }
+  header .header-logo-text .sponsor {
+    font-size: 14px; }
+  .header-ladle {
+    display: none; } }

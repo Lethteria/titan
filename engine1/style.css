@@ -9,7 +9,7 @@
 	position: relative;
 	width: 100%;
 	max-width: 830px;
-	max-height:360px;
+	max-height:422px;
 	margin:0px auto 0px;
 	z-index:90;
 	text-align:left; /* reset align=center */
@@ -76,7 +76,7 @@
 	margin:0;
 }
 #wowslider-container1 .ws_images > div > img {
-	max-height:360px;
+	max-height:422px;
 }
 
 #wowslider-container1 .ws_images iframe {
@@ -265,7 +265,7 @@
 	bottom: 1.5em;
 	left: 0.6em;
 	margin-right: 0.5em; 
-	color:#fff;
+	color:#ffffff;
 	z-index: 50;
 	line-height: 1em;
 	font-weight: bold;
@@ -287,7 +287,71 @@
 }
 #wowslider-container1 .ws-title span{
 	padding:0.4em 0.5em; 
-}#wowslider-container1 .ws_cover{
+}#wowslider-container1  .ws_thumbs { 
+	overflow:auto;
+	z-index:60;
+}
+#wowslider-container1 .ws_thumbs img{
+	text-decoration: none;
+	border: 0;
+	width: 100%;
+}
+#wowslider-container1 .ws_thumbs a {
+	position:relative;
+	text-indent: -4000px; 
+	color:transparent;
+	opacity:0.85;
+	text-decoration: none;
+	display: inline-block;
+	border: 0;
+	line-height: 0;
+	margin:1.08%;
+	text-indent:0;
+	padding: 0.81%;
+	width: 29.5533333333333%;
+	max-width: 110px;
+}
+#wowslider-container1 .ws_thumbs a:hover{
+	opacity:1;
+}
+#wowslider-container1 .ws_thumbs a:hover img{
+	visibility:visible;
+}
+#wowslider-container1 .ws_images,
+#wowslider-container1 .ws_shadow {
+	margin-bottom: 7.7em;
+}
+#wowslider-container1  .ws_thumbs {
+    position: absolute;
+    text-align: left;
+
+    bottom: 0;
+    left: 0;
+	width:100%;
+	height: 7.7em;
+}
+#wowslider-container1  .ws_thumbs div{
+	position:relative;
+	letter-spacing:-4px;
+	width:41.7em;
+	height: 100%;
+}#wowslider-container1 .ws_thumbs a.ws_selthumb{
+	background-color: #E14E3D;
+}
+
+#wowslider-container1 .ws_thumbs  a{
+	border-radius:0px;
+	background-color: #575757;
+}#wowslider-container1 .ws_images > ul{
+	animation: wsBasic 12s infinite;
+	-moz-animation: wsBasic 12s infinite;
+	-webkit-animation: wsBasic 12s infinite;
+}
+@keyframes wsBasic{0%{left:-0%} 16.67%{left:-0%} 33.33%{left:-100%} 50%{left:-100%} 66.67%{left:-200%} 83.33%{left:-200%} }
+@-moz-keyframes wsBasic{0%{left:-0%} 16.67%{left:-0%} 33.33%{left:-100%} 50%{left:-100%} 66.67%{left:-200%} 83.33%{left:-200%} }
+@-webkit-keyframes wsBasic{0%{left:-0%} 16.67%{left:-0%} 33.33%{left:-100%} 50%{left:-100%} 66.67%{left:-200%} 83.33%{left:-200%} }
+
+#wowslider-container1 .ws_cover{
 	left:0;
 	top:0;
 	bottom:0;

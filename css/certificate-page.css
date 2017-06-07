@@ -1,0 +1,54 @@
+/** a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}*/
+*:focus, .btn:focus, button:focus {
+  outline: none; }
+
+.btn:active:focus, .btn:focus, button:focus {
+  outline: none; }
+
+.achievements-gallery-page {
+  padding: 50px 0 100px;
+  background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%); }
+  .achievements-gallery-page .container {
+    padding-bottom: 10px; }
+  .achievements-gallery-page .item-title {
+    margin-bottom: 30px;
+    padding: 5px 0;
+    font-size: 18px;
+    color: #33663e;
+    border-top: 1px solid #dddddd;
+    border-bottom: 2px solid #2c382e;
+    background-color: #eeeeee; }
+  .achievements-gallery-page .section-foto {
+    margin-right: 30px;
+    margin-left: 30px; }
+    .achievements-gallery-page .section-foto img {
+      display: block;
+      transition: all 0.5s;
+      backface-visibility: hidden; }
+      .achievements-gallery-page .section-foto img:hover {
+        opacity: 0.8;
+        transform: scale(1.02, 1.02); }
+    .achievements-gallery-page .section-foto .row {
+      margin-bottom: 0; }
+    .achievements-gallery-page .section-foto .s12 {
+      margin-bottom: 15px; }
+  .achievements-gallery-page .pagination-wrap li.active {
+    background-color: #425747; }
+
+@media (max-width: 890px) {
+  .achievements-gallery-page {
+    padding-top: 5%;
+    padding-bottom: 7%; }
+    .achievements-gallery-page .item-title {
+      margin-top: 0;
+      margin-bottom: 15px; } }
+
+@media (max-width: 710px) {
+  .achievements-gallery-page .section-foto {
+    margin-right: 15px;
+    margin-left: 15px; } }
+
+.certificate-page .section-foto .col {
+  margin-bottom: 15px; }

@@ -8,14 +8,13 @@ body {
 }
 header {
     color: #ffffff;
-    background: url("../img/header/header-backgr1.jpg");
+    background: url("../img/header/header-backgr.jpg");
     border-bottom: 5px solid desaturate((lighten($brown-color, 35%)), 5);
     .row {
         margin-bottom: 0;
     }
     h1 {
         margin-bottom: 0.3em;
-        //margin-top: 1em;
         font-size: 3.2em;//48px;
     }
     .header-logo-text {
@@ -23,7 +22,7 @@ header {
         padding-bottom: 50px;
         color: #cec1b1;
         span {
-            font-family: 'Crimson Text', serif;//'Frank Ruhl Libre', sans-serif;
+            font-family: 'Crimson Text', serif;
             font-size: 0.6em;
         }
         .sponsor {
@@ -115,27 +114,18 @@ header {
     }
 }
 @media screen and (max-width : 480px) {
-   /* header {
-        .header-content {
-            background: none;
-            .row {
-                margin-bottom: 0;
-            }
-        }
+    header {
         h1 {
-            margin: 0;
-            font-size: 22px;
-            b {
-                display: block;
-            }
+            margin-top: 10px;
+            font-size: 16px;
         }
-        h4 {
-            display: none;
+        .header-logo-text .sponsor {
+            font-size: 14px;
         }
-        .header-logo-text {
-            padding-top: 10%;
-        }
-    }*/
+    }
+    .header-ladle {
+        display: none;
+    }
 }
 
 @media  screen and (min-width : 320px) and (max-width : 480px) {}

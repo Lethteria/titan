@@ -102,29 +102,6 @@
   .trainer-foto .slick-initialized a.fa-search-plus:hover:after {
     opacity: 0.5; }
 
-#back-to-top {
-  position: fixed;
-  right: 5%;
-  bottom: 10%;
-  transition: opacity 0.5s ease-out 0.2s; }
-
-.hide-arrow {
-  opacity: 0; }
-
-.show {
-  opacity: 0.6; }
-  .show:hover {
-    transition-duration: 0.1s !important;
-    opacity: 1; }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1100px; } }
-
-@media (max-width: 710px) {
-  #back-to-top {
-    width: 50px; } }
-
 @media (max-width: 1199px) {
   .about-trainer .trainer-card {
     font-size: 16px; }
@@ -148,6 +125,8 @@
       margin-left: 10px; } }
 
 @media (max-width: 710px) {
+  .trainer-page {
+    padding: 20px 0; }
   .about-trainer {
     margin: 2% 5% 5%; }
     .about-trainer .trainer-image {

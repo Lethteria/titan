@@ -41,25 +41,26 @@
   padding: 50px;
   background-color: #f2f2f2; }
 
-#back-to-top {
-  position: fixed;
-  right: 5%;
-  bottom: 10%;
-  transition: opacity 0.5s ease-out 0.2s; }
-
-.hide-arrow {
-  opacity: 0; }
-
-.show {
-  opacity: 0.6; }
-  .show:hover {
-    transition-duration: 0.1s !important;
-    opacity: 1; }
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1100px; } }
+@media (max-width: 890px) {
+  .main-page-about .foto-cups {
+    margin-left: 2%;
+    margin-right: 2%; }
+  .main-page-about .about-club {
+    margin: 30px 50px 30px 30px;
+    font-size: 16px; }
+  .main-page-slider {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 @media (max-width: 710px) {
-  #back-to-top {
-    width: 50px; } }
+  .main-page {
+    padding-top: 20px; }
+    .main-page .main-page-about {
+      padding-bottom: 30px; }
+      .main-page .main-page-about .about-club {
+        margin-top: 0;
+        margin-right: 30px;
+        font-size: 15px; }
+    .main-page .main-page-slider {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
