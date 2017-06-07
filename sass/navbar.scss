@@ -1,9 +1,4 @@
-* a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}
-.btn:active:focus, .btn:focus, button:focus  {
-    outline: none;
-}
+
 $brown-color: #302622;
 $beige-color: #b3a4a4;
 @mixin scale($time) {
@@ -13,14 +8,7 @@ $beige-color: #b3a4a4;
         transform: scale(1.1);
     }
 }
-.fa:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 nav {
     position: absolute;
     top: 50px;
@@ -29,12 +17,26 @@ nav {
 
     color: #ffffff;
     background-color: $brown-color;
-    border-top: 2px solid desaturate((lighten($brown-color, 35%)), 5);//(lighten($brown-color, 40%));
+    border-top: 2px solid desaturate((lighten($brown-color, 35%)), 5);
     border-bottom: 5px solid desaturate((lighten($brown-color, 35%)), 5);
+
+    .fa:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
     .header-logo-img {
         img {
             margin-top: -30px;
-            //transition: all .2s;
+        }
+        .logo-small {
+            width: 48px;
+            margin-top: -4px;
+            margin-left: 30%;
         }
     }
     ul {
@@ -103,7 +105,6 @@ nav {
             -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
             transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
             height: 90px;
-            //padding: 30px 20px 10px;
             overflow: visible;
             z-index: 2;
         }
@@ -128,12 +129,10 @@ nav {
     .input-field {
         margin-top: 30px;
         margin-bottom: 10px;
-        //margin: 30px 20px 10px;
-        color: $beige-color;//(lighten($brown-color, 60%));//#9e9e9e;
+        color: $beige-color;
         label{
             font-size: 18px;
-            //font-style: italic;
-            color: $beige-color;//(lighten($brown-color, 60%));
+            color: $beige-color;
         }
         input[type=text]+label.active {
             color: #ffffff;
@@ -201,7 +200,7 @@ nav {
     }
 }
 #mobile-nav {
-    color: #ffffff;//$beige-color;
+    color: #ffffff;
     background-color: $brown-color;
 
     .collapsible-header {
@@ -262,7 +261,6 @@ nav {
 }
 @media (max-width : 890px) {
     nav {
-
         a.button-collapse {
             display: block;
             i {
@@ -279,10 +277,27 @@ nav {
     .nav-search-form {
         display: none;
     }
+    nav {
+        .header-logo-img .logo-small {
+            margin-top: inherit;
+            margin-left: 15%;
+        }
+        .nav-logoTitan {
+            left: 4.65%;
+            top: 4px;
+        }
+    }
 }
 @media (max-width : 480px) {
-    nav .header-logo-img img {
-        margin-top: -10px;
+    nav {
+        .header-logo-img {
+            img {
+                margin-top: -10px;
+            }
+        }
+        .nav-logoTitan {
+            top: 6px;
+        }
     }
 }
 

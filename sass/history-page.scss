@@ -1,10 +1,4 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}*/
-.btn:active:focus, .btn:focus, button:focus  {
-    outline: none;
-}
-//@import 'navbar';
+
 $brown-color: #302622;
 $beige-color: #b3a4a4;
 $green-color: #224429;
@@ -62,11 +56,6 @@ $light-green-color: #8eac97;
             display: block;
             transition: opacity 1s, transform 1s;
             backface-visibility: hidden;
-           /* &:hover {
-                opacity: 0.5;
-                //transform: scale3d(1.05,1.05,1);
-                transform: scale(1.05)
-            }*/
         }
         .foto-title {
             position: absolute;
@@ -76,7 +65,6 @@ $light-green-color: #8eac97;
 
             text-align: center;
             background-color: #2f3238;
-            //background: darken($green-color,10%);
             color: #eeeeee;
             opacity: 0.9;
 
@@ -88,12 +76,10 @@ $light-green-color: #8eac97;
         }
         &:hover img {
             opacity: 0.5;
-            //transform: scale3d(1.05,1.05,1);
             transform: scale(1.05)
         }
     }
     .history-page-foto.left {
-        //float: left;
         margin: 15px 30px 10px 0;
     }
     .slider-wrap {
@@ -159,7 +145,7 @@ $light-green-color: #8eac97;
 
 
 @media (max-width: 1199px) {
-    .slider-wrap {
+    #history-kkts .slider-wrap {
         .container {
             width: 85%;
         }
@@ -189,20 +175,21 @@ $light-green-color: #8eac97;
     }
 }
 @media (max-width : 710px) {
-    ul.tabs {
-        display: block;
-        height: auto;
-        .tab {
-            width: 100%;
-        }
-        .indicator {
-            height: 0;
-        }
-        .phone-indicator.active-ind:after {
-            width: 100%;
-        }
-    }
     .history-page {
+        padding-top: 30px;
+        ul.tabs {
+            display: block;
+            height: auto;
+            .tab {
+                width: 100%;
+            }
+            .indicator {
+                height: 0;
+            }
+            .phone-indicator.active-ind:after {
+                width: 100%;
+            }
+        }
         .history-page-foto {
             width: 40%;
         }

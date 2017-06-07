@@ -1,6 +1,5 @@
-﻿$(document).ready(function() {
-    //$(".fancybox").fancybox();
-    $(".trainer-slider").not('.slick-initialized').slick({
+﻿
+    $("#trainer-slider").not('.slick-initialized').slick({
         dots: true,
         infinite: true,
         speed: 300,
@@ -35,4 +34,3 @@
             }
         ]
     });
-});

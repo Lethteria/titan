@@ -1,26 +1,9 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}*/
-*:focus, .btn:focus, button:focus  {
-    outline: none;
-}
-.btn:active:focus, .btn:focus, button:focus  {
-    outline: none;
-}
-//@import 'navbar';
+
 $brown-color: #302622;
 $beige-color: #b3a4a4;
 $green-color: #224429;
 $light-green-color: #8eac97;
 
-.stadium-info {
-    .fa {
-        font-family: inherit;
-        :before {
-            font: normal normal normal 14px/1 FontAwesome;
-        }
-    }
-}
 .stadium-location {
     font-size: 16px;
     color: desaturate($brown-color,20%);
@@ -33,12 +16,11 @@ $light-green-color: #8eac97;
     .stadium-address, .show-on-map {
         display: inline-block;
     }
-    .stadium-address {
-        //margin-right: 0px;
-    }
     .show-on-map {
         padding-left: 10px;
+
         font-size: 14px;
+        font-family: inherit;
         color: $green-color;
         transition: color 0.35s;
         &:hover {
@@ -48,6 +30,8 @@ $light-green-color: #8eac97;
     }
     .fa-map-marker:before {
         margin-right: 5px;
+
+        font: normal normal normal 14px/1 FontAwesome;
         font-size: 18px;
     }
 }
@@ -58,11 +42,12 @@ $light-green-color: #8eac97;
 .stadium-description-wrap {
     position: relative;
     padding-bottom: 100px;
+
     background-color: #ffffff;
     background: url("../img/stadium/stadium-bgr.png") bottom no-repeat;
-    //background: url("../img/stadium/Стадионфон21.jpg") 0% 0% / contain no-repeat;;
     background-size: contain;
     background-color: #ffffff;
+
     overflow: hidden;
     z-index: 2;
     border: 3px solid $light-green-color;
@@ -86,19 +71,17 @@ $light-green-color: #8eac97;
             border: 2px solid lighten($green-color, 10%);
         }
     }
-    /*.slick-center {
-        border: 2px solid $green-color;
-    }*/
     .slider-nav {
         .slick-slide {
             padding: 20px;
         }
         .fa {
             position: absolute;
-            //top: 0;
+
             bottom:-200%;
             height: 40px;
             margin: auto;
+
             cursor: pointer;
             color: $green-color;
             &:before {
@@ -167,21 +150,22 @@ $light-green-color: #8eac97;
     .stadium-description-wrap {
         padding-bottom: 50px;
     }
-    .stadium-foto .slider-for {
-        width: 90%;
+    .stadium-foto {
+        .slider-for {
+            width: 90%;
+        }
+        .slider-nav {
+            .fa {
+                bottom: -320%;
+            }
+            .fa-chevron-left {
+                left: -10px;
+            }
+            .fa-chevron-right {
+                right: -10px;
+            }
+        }
     }
-    .stadium-foto .slider-nav {
-        .fa {
-            bottom: -320%;
-        }
-        .fa-chevron-left {
-            left: -10px;
-        }
-        .fa-chevron-right {
-            right: -10px;
-        }
-    }
-
 }
 @media screen and (max-width : 480px) {
     .stadium-foto .slider-nav {

@@ -14,8 +14,6 @@
     margin-bottom: 30px;
     padding: 10px 0;
     font-size: 24px;
-    /*color: #ffffff;
-        background-color: desaturate(lighten($green-color, 10%),10%);*/
     color: #33663e;
     border-top: 1px solid #dddddd;
     border-bottom: 2px solid #2c382e;
@@ -67,38 +65,3 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto; }
-
-@media (max-width: 1199px) {
-  .photo-gallery-page .gallery-title {
-    font-size: 24px; }
-  .photo-gallery-page .item-title h5 {
-    font-size: 20px; } }
-
-@media (max-width: 890px) {
-  .photo-gallery-page {
-    padding-top: 5%;
-    padding-bottom: 7%; }
-    .photo-gallery-page .gallery-title {
-      font-size: 20px; }
-    .photo-gallery-page .gallery-photo {
-      margin-top: 5%;
-      margin-bottom: 5%; }
-    .photo-gallery-page .item-title h5 {
-      font-size: 18px; } }
-
-@media (max-width: 710px) {
-  .photo-gallery-page .photo-item {
-    width: 100%; }
-    .photo-gallery-page .photo-item:first-child {
-      margin-right: 0;
-      margin-bottom: 5%; } }
-
-@media screen and (max-width: 480px) {
-  .about-trainer .trainer-image {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px; }
-  .about-trainer .trainer-card {
-    padding: 3%; }
-  .about-trainer h4, .about-trainer h5 {
-    margin-left: 10px; } }

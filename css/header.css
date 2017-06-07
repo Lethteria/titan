@@ -1,6 +1,12 @@
 * a, a:hover, a:active, a:focus {
   text-decoration: none; }
 
+*:focus, .btn:focus, button:focus {
+  outline: none; }
+
+.btn:active:focus, .btn:focus, button:focus {
+  outline: none; }
+
 body {
   box-sizing: border-box; }
 
@@ -33,11 +39,7 @@ header {
       right: 0;
       display: block;
       height: inherit;
-      opacity: 0.7;
-      /*&:hover {
-                opacity: 0.4;
-                z-index: 0;
-            }*/ }
+      opacity: 0.7; }
     header .header-ladle .ladle-opacity {
       z-index: 0; }
 

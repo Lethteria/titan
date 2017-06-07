@@ -1,6 +1,14 @@
-﻿$(document).ready(function() {
-    //$(".fancybox").fancybox();
-    $(".history-slider").not('.slick-initialized').slick({
+﻿var docWidth = $(document).width(),
+    HistoryTab = $('#history-control-tab');
+if (docWidth<480){
+    HistoryTab.find("a[href^='#history-kkts']").text('история конвертерного цеха');
+}
+HistoryTab.find('a').click(function(){
+    $('#history-control-tab').find('a').removeClass('active-ind');
+    $(this).addClass('active-ind');
+});
+
+    $("#history-slider").not('.slick-initialized').slick({
         dots: true,
         infinite: true,
         speed: 300,
@@ -35,4 +43,4 @@
             }
         ]
     });
-});
+

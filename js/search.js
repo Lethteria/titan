@@ -1,4 +1,8 @@
 ﻿$(document).ready(function() {
+    $('nav .search-icon').click(function(){
+        $(this).next().toggleClass('search-open');
+    });
+
     $('#titan-search').click(function(){
         $(this).val("Поиск временно не работает");
         $(this).attr('disabled', true);

@@ -1,12 +1,3 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}*/
-*:focus, .btn:focus, button:focus {
-  outline: none; }
-
-.btn:active:focus, .btn:focus, button:focus {
-  outline: none; }
-
 .achievements-gallery-page {
   padding: 50px 0 100px;
   background: linear-gradient(to bottom, #dbd9d9 0%, #eeedec 6%, #ffffff 15%); }

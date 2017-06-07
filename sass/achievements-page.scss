@@ -1,13 +1,4 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}*/
-*:focus, .btn:focus, button:focus  {
-    outline: none;
-}
-.btn:active:focus, .btn:focus, button:focus  {
-    outline: none;
-}
-//@import 'navbar';
+
 .clearfix:before, .clearfix:after {
     display: block;
     content: "";
@@ -61,12 +52,11 @@ $light-green-color: #8eac97;
     .item-content-trophy {
         padding: 10px;
         margin-bottom: 20px;
-        //width: 50%;
+
         border: 1px solid #eeeeee;
         .trophy-icon {
             width: 15%;
             float: left;
-            //margin-right: 30px;
         }
         .about-trophy {
             margin-left: 20%;
@@ -75,15 +65,10 @@ $light-green-color: #8eac97;
             margin-bottom: 10px;
             font-size: 16px;
             font-weight: 500;
-            //border-bottom: 1px solid $brown-color;
-            //overflow: hidden;
         }
         p {
             margin-top: 5px;
             margin-bottom: 5px;
-            /*&:nth-child(3) {
-                font-size: 14px;
-            }*/
         }
     }
     .fa {
@@ -152,22 +137,11 @@ $light-green-color: #8eac97;
         margin-left: 10px;
         vertical-align: bottom;
     }
-    /*.table-cup {
-        background: url("../img/achievements/cup-sm.png") no-repeat 65% center;
-    }*/
     .photo-gallery {
         padding-bottom: 30px;
         background-color: #ddd;
         border-top: 1px solid #d0d0d0;
-        /*a {
-            display: block;
-            margin: 30px;
-            //padding: 30px;
-            background-color: #2f3238;
-        }
-        img {
-            opacity: 0.8;
-        }*/
+
         .gallery-photo {
             margin: 4% 5% 4%;
         }
@@ -196,7 +170,6 @@ $light-green-color: #8eac97;
         .item-title {
             position: absolute;
             top: 5%;
-            //bottom: 20%;
             left: 0;
             right: 0;
 
@@ -294,7 +267,6 @@ $light-green-color: #8eac97;
         }
         .football .section-content .city-cup {
             top: -50px;
-            //max-width: 12%;
         }
         .item-content-trophy {
             margin-bottom: 15px;

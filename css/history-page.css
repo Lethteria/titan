@@ -1,9 +1,3 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}*/
-.btn:active:focus, .btn:focus, button:focus {
-  outline: none; }
-
 .clearfix:before, .clearfix:after {
   content: "";
   display: table; }
@@ -49,12 +43,7 @@
     .history-page .history-page-foto img {
       display: block;
       transition: opacity 1s, transform 1s;
-      backface-visibility: hidden;
-      /* &:hover {
-                opacity: 0.5;
-                //transform: scale3d(1.05,1.05,1);
-                transform: scale(1.05)
-            }*/ }
+      backface-visibility: hidden; }
     .history-page .history-page-foto .foto-title {
       position: absolute;
       bottom: 0;
@@ -119,7 +108,7 @@
   margin-top: 10px; }
 
 @media (max-width: 1199px) {
-  .slider-wrap .container {
+  #history-kkts .slider-wrap .container {
     width: 85%; } }
 
 @media (max-width: 890px) {
@@ -135,25 +124,27 @@
     font-size: 18px; } }
 
 @media (max-width: 710px) {
-  ul.tabs {
-    display: block;
-    height: auto; }
-    ul.tabs .tab {
-      width: 100%; }
-    ul.tabs .indicator {
-      height: 0; }
-    ul.tabs .phone-indicator.active-ind:after {
-      width: 100%; }
-  .history-page .history-page-foto {
-    width: 40%; }
-  .history-page .history-page-foto.left {
-    margin-right: 10px;
-    margin-bottom: 5px; }
-  .history-page .history-page-foto {
-    margin-left: 10px;
-    margin-bottom: 5px; }
-    .history-page .history-page-foto .foto-title {
-      transform: translate3d(0, 200px, 0); }
+  .history-page {
+    padding-top: 30px; }
+    .history-page ul.tabs {
+      display: block;
+      height: auto; }
+      .history-page ul.tabs .tab {
+        width: 100%; }
+      .history-page ul.tabs .indicator {
+        height: 0; }
+      .history-page ul.tabs .phone-indicator.active-ind:after {
+        width: 100%; }
+    .history-page .history-page-foto {
+      width: 40%; }
+    .history-page .history-page-foto.left {
+      margin-right: 10px;
+      margin-bottom: 5px; }
+    .history-page .history-page-foto {
+      margin-left: 10px;
+      margin-bottom: 5px; }
+      .history-page .history-page-foto .foto-title {
+        transform: translate3d(0, 200px, 0); }
   #history-titan .item-title {
     font-size: 16px; }
   #history-titan .history-page-foto {

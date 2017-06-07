@@ -1,10 +1,4 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}
-.btn:active:focus, .btn:focus, button:focus  {
-    outline: none;
-}*/
-//@import 'navbar';
+
 $brown-color: #302622;
 $beige-color: #b3a4a4;
 $green-color: #224429;
@@ -42,11 +36,9 @@ $light-green-color: #8eac97;
         width: 23.5%;
         margin-right: 2%;
         margin-bottom: 20px;
-        //height: 106px;
 
     }
     .player-card {
-        //background: linear-gradient(to left, #eeeeee 60%, #fefcea 40%);
         background-color: #eeeeee;
     }
     .player-card-image, .player-card-content {
@@ -54,7 +46,6 @@ $light-green-color: #8eac97;
     }
     .player-card-image {
         width: 40%;
-        //border: 1px solid $light-green-color;
         img {
             max-width: 100%;
             height: auto;
@@ -62,18 +53,14 @@ $light-green-color: #8eac97;
             border: 1px solid $light-green-color;
             border-radius: 3px;
             vertical-align: bottom;
-            //vertical-align: -36%;
-            //line-height: normal;
         }
     }
     .player-card-content {
         width: 60%;
-        //width: 140px;
         padding-left: 10px;
 
         font-size: 14px;
         font-style: italic;
-        //background-color: $green-color;
         .player-name {
             font-style: normal;
         }

@@ -1,17 +1,3 @@
-/** a, a:hover, a:active, a:focus {
-    text-decoration: none;
-}*/
-*:focus, .btn:focus, button:focus {
-  outline: none; }
-
-.btn:active:focus, .btn:focus, button:focus {
-  outline: none; }
-
-.stadium-info .fa {
-  font-family: inherit; }
-  .stadium-info .fa :before {
-    font: normal normal normal 14px/1 FontAwesome; }
-
 .stadium-location, .stadium-characteristics {
   font-size: 16px;
   color: #292929; }
@@ -24,6 +10,7 @@
   .stadium-location .show-on-map, .stadium-characteristics .show-on-map {
     padding-left: 10px;
     font-size: 14px;
+    font-family: inherit;
     color: #224429;
     transition: color 0.35s; }
     .stadium-location .show-on-map:hover, .stadium-characteristics .show-on-map:hover {
@@ -31,6 +18,7 @@
       color: #55aa67; }
   .stadium-location .fa-map-marker:before, .stadium-characteristics .fa-map-marker:before {
     margin-right: 5px;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: 18px; }
 
 .stadium-characteristics {
@@ -55,10 +43,7 @@
   padding-bottom: 100px;
   background-color: #eeeeee;
   border-top: 1px solid #d0d0d0;
-  z-index: -0;
-  /*.slick-center {
-        border: 2px solid $green-color;
-    }*/ }
+  z-index: -0; }
   .stadium-foto .slider-for {
     width: 70%;
     margin-left: auto;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Settings</title>
+    <title>ФК Титан</title>
     <link href="css/materialize.min.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
@@ -168,7 +168,7 @@
                     </div>
 
                     <div class="trainer-foto">
-                        <div class="trainer-slider">
+                        <div class="trainer-slider" id="trainer-slider">
                             <div class="single-item">
                                 <a href="../img/trainer/trainer2.jpg" class="fancybox fa fa-search-plus" data-fancybox-group="trainer-gallery">
                                     <img src="../img/trainer/trainer2.jpg" alt="тренер ФК Титан Сухорутченко Иван" class="responsive-img">
@@ -217,18 +217,18 @@
                         <div class="row">
                             <ul class="col m4 s12">
                                 <li>Клуб</li>
-                                <li><a href="">История</a></li>
-                                <li><a href="">Стадион</a></li>
+                                <li><a href="history.html">История</a></li>
+                                <li><a href="stadium.html">Стадион</a></li>
                             </ul>
                             <ul class="col m4 s12">
                                 <li>Команда</li>
-                                <li><a href="">Игроки</a></li>
-                                <li><a href="">Тренер</a></li>
+                                <li><a href="players.html">Игроки</a></li>
+                                <li><a href="trainer.html">Тренер</a></li>
                             </ul>
                             <ul class="col m4 s12">
                                 <li>Участие в турнирах</li>
-                                <li><a href="">Достижения</a></li>
-                                <li><a href="">Игровые моменты</a></li>
+                                <li><a href="achievements.html">Достижения</a></li>
+                                <li><a href="photo-gallery.html">Игровые моменты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -252,60 +252,19 @@
            <img src="img/main/to-top.png" alt="back-to-top" class="responsive-img">
        </a>
 
-   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!--jQuery-->
+
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/trainer.js"></script>
-    <script>
-        $( document ).ready(function(){
-            $(".dropdown-button").dropdown();
-            $(".button-collapse").sideNav();
-            $('.collapsible').collapsible();
-        });
-    </script>
-    <script>
-        $( document ).ready(function(){
-            var pos = $('nav').offset().top;
 
-            $(window).scroll(function(){
-                if ($(window).scrollTop() >= pos){
-                    $('nav').addClass('nav-fixed');
-                    $('nav').find('.header-logo-img img').css({'width':'48px','margin-top':'-4px','margin-left':'30%'});//.fadeOut();
-                    $('nav .header-logo-img img').fadeOut();
-                    $('nav .nav-logoTitan').fadeIn();
-                    //$('nav .nav-search-form').css({'float':'right'});
-                    $('header .header-ladle img').addClass('ladle-opacity');
-                    $('#back-to-top').addClass('show');
-                } else {
-                    $('nav').removeClass('nav-fixed');
-                    $('nav .header-logo-img img').fadeIn();
-                    $('nav .header-logo-img img').css({'width':'100%','margin-top':'-30px','margin-left':'0'});
-                    $('nav .nav-logoTitan').fadeOut();//.css('display','none');
-                    $('nav .nav-search-form').css({'float':'none'});
-                    $('header .header-ladle img').removeClass('ladle-opacity');
-                    $('#back-to-top').removeClass('show');
-                }
-            });
-        });
-    </script>
-    <script>
-        $( document ).ready(function(){
-            $('nav .search-icon').click(function(){
-                $(this).next().toggleClass('search-open');
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('#back-to-top').click(function(){
-                $('html, body').animate({scrollTop: 0},500);
-                //return false;
-            });
-        });
-    </script>
+    <script src="js/trainer.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/search.js"></script>
+
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox();
