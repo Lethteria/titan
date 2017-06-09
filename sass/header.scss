@@ -14,7 +14,7 @@ body {
 }
 header {
     color: #ffffff;
-    background: url("../img/header/header-backgr.jpg");
+    background: url("header-backgr.jpg");
     border-bottom: 5px solid desaturate((lighten($brown-color, 35%)), 5);
     .row {
         margin-bottom: 0;

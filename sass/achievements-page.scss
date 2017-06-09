@@ -284,6 +284,12 @@ $light-green-color: #8eac97;
                 }
             }
         }
+        table.responsive-table {
+            font-size: 13px;
+            th {
+                font-weight: 400;
+            }
+        }
     }
 }
 @media screen and (max-width : 480px) {
@@ -305,6 +311,19 @@ $light-green-color: #8eac97;
         .photo-gallery {
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+        table.responsive-table {
+            th {
+                width: 115px;
+            }
+            tr {
+                th:not(:first-child){
+                    height: 65px;
+                }
+                td:not(:first-child){
+                    height: 65px;
+                }
+            }
         }
     }
 }

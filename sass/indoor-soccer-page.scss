@@ -95,4 +95,17 @@ $light-green-color: #8eac97;
         margin-right: auto;
     }
 }
+@media (max-width : 710px) {
+    .indoor-soccer-page {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        .item-title {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .section-title {
+            font-size: 16px;
+        }
+    }
+}
 

@@ -62,3 +62,7 @@ function MyPagin(page,link){
     MyPaginLink.AddDisabled();
 }
 
+$(document).ajaxSuccess(function(){
+    $(".fancybox").fancybox();
+});
+

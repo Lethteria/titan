@@ -196,7 +196,11 @@
       width: 100%; }
       .achievements-page .photo-gallery .photo-item:first-child {
         margin-right: 0;
-        margin-bottom: 30px; } }
+        margin-bottom: 30px; }
+  .achievements-page table.responsive-table {
+    font-size: 13px; }
+    .achievements-page table.responsive-table th {
+      font-weight: 400; } }
 
 @media screen and (max-width: 480px) {
   .achievements-page .section-content .item-title, .achievements-page .section-content .item-trophy {
@@ -209,4 +213,10 @@
     margin-top: 0; }
   .achievements-page .photo-gallery {
     padding-top: 20px;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .achievements-page table.responsive-table th {
+    width: 115px; }
+  .achievements-page table.responsive-table tr th:not(:first-child) {
+    height: 65px; }
+  .achievements-page table.responsive-table tr td:not(:first-child) {
+    height: 65px; } }
